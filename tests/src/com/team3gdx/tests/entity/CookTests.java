@@ -44,6 +44,21 @@ public class CookTests {
 
     @Test
     public void getX() {
+        Cook cook = new Cook(new Vector2(64 * 5, 64 * 5), 1);
+
+        boolean val = false;
+
+        if(cook.getX() == 64 * 5){
+            val = true;
+        }
+        assertTrue(val = true);
+
+        if(cook.getX() != 64 * 5){
+            val = false;
+        }
+        assertFalse(val = false);
+
+        cook = null;
     }
 
     @Test
@@ -67,6 +82,21 @@ public class CookTests {
 
     @Test
     public void getWidth() {
+        Cook cook = new Cook(new Vector2(64 * 5, 64 * 5), 1);
+
+        boolean val = false;
+
+        if(cook.getWidth() == 64){
+            val = true;
+        }
+        assertTrue(val = true);
+
+        if(cook.getWidth() != 64){
+            val = false;
+        }
+        assertFalse(val = false);
+
+        cook = null;
     }
 
     @Test
@@ -90,5 +120,20 @@ public class CookTests {
 
     @Test
     public void getDirection() {
+        Cook cook = new Cook(new Vector2(64 * 5, 64 * 5), 1);
+
+        boolean val = false;
+
+        if(cook.getDirection() == new Vector2(64 * 5, 64 * 5)){
+            val = true;
+        }
+        assertTrue(val = true);
+
+        if(cook.getDirection() != new Vector2(64 * 5, 64 * 5)){
+            val = false;
+        }
+        assertFalse(val = false);
+
+        cook = null;
     }
 }
