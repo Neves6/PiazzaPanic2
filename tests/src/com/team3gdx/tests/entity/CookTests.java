@@ -1,5 +1,6 @@
 package com.team3gdx.tests.entity;
 
+import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.team3gdx.game.entity.Cook;
 import org.junit.Test;
@@ -33,6 +34,7 @@ public class CookTests {
 
     @Test
     public void getCollideBoxAtPosition() {
+
     }
 
     @Test
@@ -41,6 +43,21 @@ public class CookTests {
 
     @Test
     public void getY() {
+        Cook cook = new Cook(new Vector2(64 * 5, 64 * 5), 1);
+
+        boolean val = false;
+
+        if(cook.getY() == 64 * 5){
+            val = true;
+        }
+        assertTrue(val = true);
+
+        if(cook.getY() != 64 * 5){
+            val = false;
+        }
+        assertFalse(val = false);
+
+        cook = null;
     }
 
     @Test
@@ -49,6 +66,21 @@ public class CookTests {
 
     @Test
     public void getHeight() {
+        Cook cook = new Cook(new Vector2(64 * 5, 64 * 5), 1);
+
+        boolean val = false;
+
+        if(cook.getHeight() == 128){
+            val = true;
+        }
+        assertTrue(val = true);
+
+        if(cook.getHeight() != 128){
+            val = false;
+        }
+        assertFalse(val = false);
+
+        cook = null;
     }
 
     @Test
