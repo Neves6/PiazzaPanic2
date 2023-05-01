@@ -43,21 +43,6 @@ public class CookTests {
     }
 
     @Test
-    public void getCollideBoxAtPosition() {
-        Cook cook = new Cook(new Vector2(20, 30), 1);
-        Rectangle expectedBox = new Rectangle(cook.getX(), cook.getY(), 10, 20);
-
-        //Rectangle resultBox = this.getCollideBoxAtPosition(cook.getX(), cook.getY());
-
-        //assertEquals(expectedBox.getX(), resultBox.getX(), 0.1);
-        //assertEquals(expectedBox.getY(), resultBox.getY(), 0.1);
-        //assertEquals(expectedBox.getWidth(), resultBox.getWidth(), 0.1);
-        //assertEquals(expectedBox.getHeight(), resultBox.getHeight(), 0.1);
-
-        cook = null;
-    }
-
-    @Test
     public void getX() {
     }
 

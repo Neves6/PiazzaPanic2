@@ -9,11 +9,6 @@ import static org.junit.Assert.*;
 
 @RunWith(GdxTestRunner.class)
 public class CustomerTests {
-    @Test
-    public void getOrder(){
-        Customer customer = new Customer(64, 64, 40, 1);
-        boolean val = false;
-    }
 
     @Test
     public void arrived(){
