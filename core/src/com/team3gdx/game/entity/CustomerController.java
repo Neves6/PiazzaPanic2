@@ -15,14 +15,14 @@ import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class CustomerController {
-    int lockout;
-    ArrayList<ArrayList<Integer>> customerCells;
+    public int lockout;
+    public ArrayList<ArrayList<Integer>> customerCells;
     public Customer[] customers;
     public Customer[] leavingcustomers;
-    TiledMap gameMap;
-    int top;
-    int bottom;
-    int xCoordinate;
+    public TiledMap gameMap;
+    public int top;
+    public int bottom;
+    public int xCoordinate;
 
     public CustomerController(TiledMap map) {
         this.gameMap = map;
