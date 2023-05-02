@@ -204,13 +204,13 @@ public class GameScreen implements Screen {
      * Add a new chef to the game
      */
     public static void addnewchef() {
-        if (score + accumulatedScore >= 10) {
+        if (score + accumulatedScore >= 500) {
             cooks_after = new Cook[]{new Cook(new Vector2(cooks[0].getX(), cooks[0].getY()), 1), new Cook(new Vector2(cooks[1].getX(), cooks[1].getY()), 2), new Cook(new Vector2(64 * 5, 64), 3)};
             cooks = cooks_after;
             cook.locked = false;
             currentCookIndex = 2;
             cook = cooks[currentCookIndex];
-            subScore(10);
+            subScore(500);
         }
     }
 
