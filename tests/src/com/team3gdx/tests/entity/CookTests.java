@@ -1,6 +1,5 @@
 package com.team3gdx.tests.entity;
 
-import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.team3gdx.game.entity.Cook;
 import com.team3gdx.game.util.CollisionTile;
