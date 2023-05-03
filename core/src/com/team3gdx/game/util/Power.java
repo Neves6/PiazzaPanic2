@@ -56,7 +56,7 @@ public class Power {
                 //Reset stats and current power after timer ends
                 cookspeed(1 / Float.valueOf(speedmultiplier)); //resets speed by dividing multiplier
                 speedmultiplier = 2;
-                System.out.println("Speed should be set invisible now" + currentPower);
+                //System.out.println("Speed should be set invisible now" + currentPower);
                 temp.setVisible(false);
                 temp.dispose();
                 currentPower = "None";
@@ -98,7 +98,7 @@ public class Power {
             @Override
             public void run() {
                 // Reset stats and current power after timer ends
-                System.out.println("Instant should be set invisible now" + currentPower);
+                //System.out.println("Instant should be set invisible now" + currentPower);
                 temp.setVisible(false);
                 temp.dispose();
                 currentPower = "None";

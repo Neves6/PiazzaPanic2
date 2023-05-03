@@ -177,7 +177,7 @@ public class StationManager {
             case "locked_oven":
 
                 batch.begin();
-                (new BitmapFont()).draw(batch, "Unlock station [e]", pos.x * 64, pos.y * 64);
+                (new BitmapFont()).draw(batch, "Unlock station 150 points [e]", pos.x * 64, pos.y * 64);
                 batch.end();
                 if (GameScreen.control.drop) {
                     this.unlockStation(pos, "Oven");
@@ -185,7 +185,7 @@ public class StationManager {
                 break;
             case "locked_frying":
                 batch.begin();
-                (new BitmapFont()).draw(batch, "Unlock station [e]", pos.x * 64, pos.y * 64);
+                (new BitmapFont()).draw(batch, "Unlock station 150 points [e]", pos.x * 64, pos.y * 64);
                 batch.end();
                 if (GameScreen.control.drop) {
                     this.unlockStation(pos, "Frying");
@@ -209,7 +209,7 @@ public class StationManager {
                 break;
             case "locked_pan":
                 batch.begin();
-                (new BitmapFont()).draw(batch, "Unlock station [e]", pos.x * 64, pos.y * 64);
+                (new BitmapFont()).draw(batch, "Unlock station 150 points [e]", pos.x * 64, pos.y * 64);
                 batch.end();
                 if (GameScreen.control.drop) {
                     this.unlockStation(pos, "Baking");
@@ -217,7 +217,7 @@ public class StationManager {
                 break;
             case "locked_chopping":
                 batch.begin();
-                (new BitmapFont()).draw(batch, "Unlock station [e]", pos.x * 64, pos.y * 64);
+                (new BitmapFont()).draw(batch, "Unlock station 150 points [e]", pos.x * 64, pos.y * 64);
                 batch.end();
                 if (GameScreen.control.drop) {
                     this.unlockStation(pos, "Chopping");
@@ -248,8 +248,8 @@ public class StationManager {
      * @author Neves6
      */
     public void unlockStation(Vector2 pos, String name) {
-        if (GameScreen.score + GameScreen.accumulatedScore >= 10) {
-            GameScreen.subScore(10);
+        if (GameScreen.score + GameScreen.accumulatedScore >= 150) {
+            GameScreen.subScore(150);
             TiledMapTileLayer.Cell cell = GameScreen.returnCell(pos);
             TextureRegion newTexture = new TextureRegion(textures.get(name));
             TiledMapTile newTile = new StaticTiledMapTile(newTexture);
