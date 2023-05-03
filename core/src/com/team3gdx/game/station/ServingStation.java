@@ -16,7 +16,7 @@ import java.util.Random;
  */
 public class ServingStation extends Station {
     public String name = "ServingStation";
-    String[] possibleOrders = new String[]{"salad", "burger"};
+    String[] possibleOrders = new String[]{"pizza" , "jacket_potato"};
     /**
      * Configure allowed ingredient to be those on the menu.
      */
@@ -65,7 +65,8 @@ public class ServingStation extends Station {
     public void serveOrder() {
         if (!slots.empty()) {
             //Stupid more verbose for-loop to prevent concurrentModification errors.
-            for (Iterator<OrderCard> iterator = GameScreen.orderCards.iterator(); iterator.hasNext(); ) {
+            Iterator<OrderCard> iterator;
+            for (iterator = GameScreen.orderCards.iterator(); iterator.hasNext(); ) {
                 OrderCard order = iterator.next();
                 //For each ordercard, the station checks whether there exists an item in its slots that matches it.
                 //It does this by matching the ordercard name to its relative recipe in Menu.RECIPES.
@@ -77,20 +78,21 @@ public class ServingStation extends Station {
                         case "burger":
                             GameScreen.addScore(200);
                             break;
-                        case "pizza":
-                            GameScreen.addScore(300);
-                            break;
                         case "jacket_potato":
                             GameScreen.addScore(100);
                             break;
                     }
-                    iterator.remove();
-                    slots.pop();
-                    GameScreen.orderJustServed = true;
-                    GameScreen.customersServed += 1;
+                } else if (!slots.isEmpty() && slots.peek().equals(Ingredients.cooked_pizza) && order.getName() == "pizza") {
+                    GameScreen.addScore(300);
                 }
+
             }
+            iterator.remove();
+            slots.pop();
+            GameScreen.orderJustServed = true;
+            GameScreen.customersServed += 1;
+
+        }
         }
     }
 
-}
