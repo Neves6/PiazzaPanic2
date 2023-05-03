@@ -1,10 +1,10 @@
 package com.team3gdx.tests.util;
 
+import com.badlogic.gdx.math.Rectangle;
 import com.team3gdx.game.util.CollisionTile;
 import org.junit.Test;
-import com.badlogic.gdx.math.Rectangle;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class CollisionTileTests {
 

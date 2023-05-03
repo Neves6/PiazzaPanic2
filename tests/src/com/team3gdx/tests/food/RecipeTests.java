@@ -3,19 +3,21 @@ package com.team3gdx.tests.food;
 import com.team3gdx.game.food.Ingredient;
 import com.team3gdx.game.food.Ingredients;
 import com.team3gdx.game.food.Recipe;
-import org.junit.Test;
 import com.team3gdx.tests.GdxTestRunner;
+import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(GdxTestRunner.class)
 public class RecipeTests {
     @Test
-    public void matches(){
+    public void matches() {
         Map<Ingredient, String> SALAD_STEPS = new HashMap<Ingredient, String>();
         SALAD_STEPS.put(Ingredients.lettuceChopped, "Cut");
 

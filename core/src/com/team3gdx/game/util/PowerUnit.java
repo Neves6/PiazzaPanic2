@@ -5,6 +5,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 /**
  * Stores powers and relevant textures, positions, and used by GameScreen to render power ups.
+ *
+ * @author Neves6
  */
 public class PowerUnit {
     private final Texture texture;
@@ -24,6 +26,7 @@ public class PowerUnit {
      * @param texture
      * @param x
      * @param y
+     * @author Neves6
      */
     public PowerUnit(Integer power, Texture texture, Float x, Float y) {
         this.power = power;
@@ -37,6 +40,7 @@ public class PowerUnit {
      * getter method for returning power
      *
      * @return
+     * @author Neves6
      */
 
     public Integer getPower() {
@@ -47,6 +51,7 @@ public class PowerUnit {
      * used to render the textures in the right positions
      *
      * @param batch
+     * @author Neves6
      */
     public void render(SpriteBatch batch) {
         batch.draw(this.texture, this.x, this.y, 100, 50);
@@ -56,6 +61,7 @@ public class PowerUnit {
      * used to set visibility of textures, if set to false then gamescreen.powerunit method will stop rendering
      *
      * @param visible
+     * @author Neves6
      */
     public void setVisible(boolean visible) {
         this.visible = visible;
@@ -65,6 +71,7 @@ public class PowerUnit {
      * checks for visibility by gamescreen.powerunit
      *
      * @return
+     * @author Neves6
      */
     public boolean isVisible() {
         return visible;
@@ -74,6 +81,7 @@ public class PowerUnit {
      * getter method for returning texture
      *
      * @return
+     * @author Neves6
      */
 
     public Texture getTexture() {
@@ -84,6 +92,7 @@ public class PowerUnit {
      * getter method for returning x position
      *
      * @return
+     * @author Neves6
      */
     public Float getX() {
         return x;
@@ -93,6 +102,7 @@ public class PowerUnit {
      * getter method for returning y positions
      *
      * @return
+     * @author Neves6
      */
     public Float getY() {
         return y;
@@ -100,6 +110,7 @@ public class PowerUnit {
 
     /**
      * @return boolean if disposed succesfully
+     * @author Neves6
      */
     public boolean dispose() {
         texture.dispose();

@@ -8,6 +8,11 @@ import com.team3gdx.game.food.Ingredient;
 import com.team3gdx.game.screen.GameScreen;
 import com.team3gdx.game.screen.GameScreen.STATE;
 
+/**
+ * A cooking station for cooking ingredients.
+ *
+ * @author Team3Gdx
+ */
 public class CookingStation extends Station {
 
     ParticleEffect[] pES;
@@ -23,6 +28,7 @@ public class CookingStation extends Station {
      *
      * @param pos          The position of the particles.
      * @param particlePath The path to the particle effect's behaviour.
+     * @author Team3Gdx
      */
     protected void createParticleEmitter(Vector2 pos, String particlePath) {
         pES = new ParticleEffect[numberOfSlots];
@@ -44,6 +50,7 @@ public class CookingStation extends Station {
      * @param batch
      * @param slotIndex The slot to draw the particle effects at (which slot is
      *                  active).
+     * @author Team3Gdx
      */
     public void drawParticles(SpriteBatch batch, int slotIndex) {
         batch.begin();
@@ -60,6 +67,7 @@ public class CookingStation extends Station {
      * Lock the current cook at the station.
      *
      * @return A boolean indicating if the cook was successfully locked.
+     * @author Team3Gdx
      */
     public boolean lockCook() {
         if (!slots.isEmpty()) {
@@ -83,6 +91,7 @@ public class CookingStation extends Station {
      * Check interactions with the cooking station.
      *
      * @param batch
+     * @author Team3Gdx
      */
     public void checkCookingStation(SpriteBatch batch) {
         if (!slots.empty() && !GameScreen.cook.full() && slots.peek().flipped)

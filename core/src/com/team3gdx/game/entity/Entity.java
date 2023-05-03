@@ -4,6 +4,12 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 
+/**
+ * Entity
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class Entity {
 
     public Vector2 pos;
@@ -20,6 +26,7 @@ public class Entity {
 
     /**
      * @param batch SpriteBatch on which to draw the entity
+     * @author Team3Gdx
      */
     public void draw(SpriteBatch batch) {
         batch.begin();

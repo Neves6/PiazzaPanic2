@@ -14,6 +14,9 @@ import java.util.Stack;
 
 /**
  * Represents a station.
+ *
+ * @author Team3Gdx
+ * @author Neves6
  */
 public class Station {
 
@@ -55,6 +58,7 @@ public class Station {
      *                           ingredients.
      * @param allowedIngredients A list of allowed ingredients in the station's
      *                           slots.
+     * @author Team3Gdx
      */
     public Station(Vector2 pos, int numberOfSlots, boolean infinite, Ingredient[] allowedIngredients,
                    String soundPath) {
@@ -72,6 +76,7 @@ public class Station {
      *
      * @param ingredient The ingredient to be placed.
      * @return A boolean to indicate if the ingredient was successfully placed.
+     * @author Team3Gdx
      */
     public boolean place(Ingredient ingredient) {
         if ((slots.size() < numberOfSlots && isAllowed(ingredient)) || infinite) {
@@ -88,6 +93,7 @@ public class Station {
      *
      * @param droppedIngredient The ingredient to check.
      * @return A boolean to indicate if the ingredient was allowed.
+     * @author Team3Gdx
      */
     public boolean isAllowed(Ingredient droppedIngredient) {
         if (allowedIngredients == null)
@@ -104,6 +110,8 @@ public class Station {
      * Take the ingredient from the top slot.
      *
      * @return The ingredient taken if successful, null otherwise.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public Ingredient take() {
         if (slots.empty())
@@ -119,6 +127,7 @@ public class Station {
      * Display text indicating to take the ingredient.
      *
      * @param batch The SpriteBatch to draw the text on.
+     * @author Team3Gdx
      */
     public void drawTakeText(SpriteBatch batch) {
         if (!slots.empty() && !GameScreen.cook.full()) {
@@ -131,6 +140,7 @@ public class Station {
      * Display text indicating to drop an item in the station's slot.
      *
      * @param batch The SpriteBatch to draw the text on.
+     * @author Team3Gdx
      */
     public void drawDropText(SpriteBatch batch) {
         if (GameScreen.cook.heldItems.size() > 0 && isAllowed(GameScreen.cook.heldItems.peek())) {
@@ -141,6 +151,7 @@ public class Station {
     /**
      * @param text Text to be drawn.
      * @param pos  Position to draw at.
+     * @author Team3Gdx
      */
     public void drawText(SpriteBatch batch, String text, Vector2 pos) {
         batch.begin();
@@ -150,6 +161,8 @@ public class Station {
 
     /**
      * Play the station's sound.
+     *
+     * @author Team3Gdx
      */
     public void interactSound() {
         interactSound.setVolume(MainGameClass.gameVolumeScale);

@@ -15,6 +15,9 @@ import java.util.List;
 /**
  * The tutorial of the game. Includes instructions on controls and information
  * on stations.
+ *
+ * @author Team3Gdx
+ * @author Neves6
  */
 public class Tutorial {
 
@@ -85,6 +88,8 @@ public class Tutorial {
      *
      * @param batch {@link SpriteBatch} to render the text and ingredient textures.
      * @param dT    The amount of time to increment by between each character.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public static void drawBox(SpriteBatch batch, float dT) {
         curText = stages.get(stage).text.substring(0, Math.round(nextCharTimer));
@@ -121,6 +126,7 @@ public class Tutorial {
 
     /**
      * @return The coordinates of the current stage's position.
+     * @author Team3Gdx
      */
     public static Vector2 getStagePos() {
         return stages.get(stage).pos;
@@ -128,6 +134,8 @@ public class Tutorial {
 
     /**
      * Skip to the next stage of the tutorial if possible.
+     *
+     * @author Team3Gdx
      */
     public static void nextStage() {
         delay = 0;
@@ -146,6 +154,8 @@ public class Tutorial {
 
     /**
      * Go back to the previous tutorial stage.
+     *
+     * @author Team3Gdx
      */
     public static void previousStage() {
         nextCharTimer = 0;
@@ -161,6 +171,7 @@ public class Tutorial {
      * @param amount How long the delay is.
      * @param dT     How much to increment the delay by.
      * @return A boolean to indicate if the delay has finished.
+     * @author Team3Gdx
      */
     private static boolean addDelay(float amount, float dT) {
         if (delay < amount)
@@ -173,6 +184,8 @@ public class Tutorial {
 
 /**
  * Used to store a position and string.
+ *
+ * @author Team3Gdx
  */
 class PosTextPair {
 

@@ -4,6 +4,14 @@ import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputAdapter;
 import com.badlogic.gdx.InputProcessor;
 
+/**
+ * This class is used to handle the controls of the game.
+ * It is used to set the controls and set certain attributes to determine action when key is pressed.
+ * It is also used to reset/set control attributes when key is released.
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class Control extends InputAdapter implements InputProcessor {
 
     public boolean up, down, left, right;
@@ -13,10 +21,13 @@ public class Control extends InputAdapter implements InputProcessor {
     public boolean tab, shift;
     public boolean power;
 
-    @Override
     /**
      * used to set controls, set certain attributes to determine action when key is pressed
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
+    @Override
     public boolean keyDown(int keyCode) {
         switch (keyCode) {
 //		case Keys.DOWN:
@@ -58,6 +69,9 @@ public class Control extends InputAdapter implements InputProcessor {
 
     /**
      * used to reset/set control attributes when key is released.
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
     @Override
     public boolean keyUp(int keycode) {

@@ -4,6 +4,12 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
+/**
+ * Customer entity class
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class Customer {
     int targetsquare;
     public int posx;
@@ -33,6 +39,8 @@ public class Customer {
      * @param y      - y starting pixel coordinate
      * @param tg     - target y cell coordinate - not in pixels
      * @param custno - customer number - changes texture
+     * @author Team3Gdx
+     * @author Neves6
      */
     public Customer(int x, int y, int tg, int custno) {
         targetsquare = tg;
@@ -57,6 +65,9 @@ public class Customer {
 
     /**
      * Set arrival time as when customer reaches serving station
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void arrived() {
         arrivalTime = 18000 + System.currentTimeMillis();
@@ -64,6 +75,8 @@ public class Customer {
 
     /**
      * Checks if customer has been waiting too long, returns true if so.
+     *
+     * @author Neves6
      */
     public Boolean hasExpired() {
         System.out.println("Arrival time: " + arrivalTime);
@@ -75,6 +88,7 @@ public class Customer {
      * Render top of customer
      *
      * @param b - spritebatch to render with
+     * @author Team3Gdx
      */
     public void renderCustomersTop(Batch b) {
         b.draw(currentcustparts[0][0], posx, posy + 64, 64, 64);
@@ -84,6 +98,7 @@ public class Customer {
      * Render bottom of customer
      *
      * @param b - spritebatch to render with
+     * @author Team3Gdx
      */
     public void renderCustomersBot(Batch b) {
         b.draw(currentcustparts[1][0], posx, posy, 64, 64);
@@ -93,6 +108,7 @@ public class Customer {
      * Set target square location
      *
      * @param tg - tile y coordinate of target square
+     * @author Team3Gdx
      */
     public void setTargetsquare(int tg) {
         targetsquare = tg;
@@ -100,6 +116,8 @@ public class Customer {
 
     /**
      * Move towards customer target tile
+     *
+     * @author Team3Gdx
      */
     public void stepTarget() {
         targetpixel = 32 + (targetsquare * 64);

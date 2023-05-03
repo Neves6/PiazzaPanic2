@@ -47,6 +47,13 @@ import java.util.LinkedList;
 import java.util.Objects;
 import java.util.Queue;
 
+/**
+ * GameScreen is the main screen of the game. It is where the game is played.
+ * It contains the game loop and the game logic.
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ **/
 public class GameScreen implements Screen {
 
     public static long score;
@@ -164,6 +171,8 @@ public class GameScreen implements Screen {
      *
      * @param game - Main entry point class
      * @param ms   - Title screen class
+     * @author Team3Gdx
+     * @author Neves6
      */
     public GameScreen(MainGameClass game, MainScreen ms, int lateLoadSlot) {
         accumulatedScore = 0;
@@ -202,6 +211,8 @@ public class GameScreen implements Screen {
 
     /**
      * Add a new chef to the game
+     *
+     * @author Neves6
      */
     public static void addnewchef() {
         if (score + accumulatedScore >= 500) {
@@ -217,6 +228,9 @@ public class GameScreen implements Screen {
 
     /**
      * Things that should be done while the game screen is shown
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void show() {
         // Start Frame Timer
@@ -541,6 +555,8 @@ public class GameScreen implements Screen {
      * Render method for main game
      *
      * @param delta - some change in time
+     * @author Team3Gdx
+     * @author Neves6
      */
 
     public void render(float delta) {
@@ -626,6 +642,7 @@ public class GameScreen implements Screen {
      * Used to draw powers depending on power stack.
      *
      * @return
+     * @author Neves6
      */
     private boolean drawPower() {
         if (!Power.isPowerEmpty()) {
@@ -643,6 +660,8 @@ public class GameScreen implements Screen {
 
     /**
      * Change selected cook
+     *
+     * @author Team3Gdx
      */
     private void checkCookSwitch() {
         if (control.tab && Tutorial.complete) {
@@ -667,6 +686,9 @@ public class GameScreen implements Screen {
 
     /**
      * Draw UI elements
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
     private void drawUI() {
         if (orderCards.size() != 0) {
@@ -718,6 +740,7 @@ public class GameScreen implements Screen {
      * Change camera movement type depending on position to cook
      *
      * @param delta - some change in time
+     * @author Team3Gdx
      */
     private void setCameraLerp(float delta) {
         if (!Tutorial.complete) {
@@ -741,6 +764,8 @@ public class GameScreen implements Screen {
 
     /**
      * Draws the held items for all cooks on the screen
+     *
+     * @author Team3Gdx
      */
     private void drawHeldItems() {
         for (Cook ck : cooks) {
@@ -760,6 +785,8 @@ public class GameScreen implements Screen {
      * Changes game window state
      *
      * @param state1 - the state to change to
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void changeScreen(STATE state1) {
         if (state1 == STATE.main) {
@@ -809,6 +836,8 @@ public class GameScreen implements Screen {
 
     /**
      * Checks to see whether escape has been pressed to pause the game
+     *
+     * @author Team3Gdx
      */
     public void checkState() {
         if (Gdx.input.isKeyPressed(Keys.ESCAPE)) {
@@ -818,6 +847,8 @@ public class GameScreen implements Screen {
 
     /**
      * Updates the music volume slider
+     *
+     * @author Team3Gdx
      */
     public void musicVolumeUpdate() {
         float fromTopy = Gdx.input.getY();
@@ -840,6 +871,8 @@ public class GameScreen implements Screen {
 
     /**
      * Updates the game volume slider
+     *
+     * @author Team3Gdx
      */
     public void gameVolumeUpdate() {
         float fromTopy = Gdx.input.getY();
@@ -861,6 +894,9 @@ public class GameScreen implements Screen {
 
     /**
      * Calculates coordinates for UI element scaling;
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
     private void calculateBoxMaths() {
         this.gameResolutionX = ms.gameResolutionX;
@@ -914,6 +950,7 @@ public class GameScreen implements Screen {
      * Construct an array of CollisionTile objects for collision detection
      *
      * @param mp- game tilemap
+     * @author Team3Gdx
      */
     private void constructCollisionData(TiledMap mp) {
         TiledMapTileLayer botlayer = (TiledMapTileLayer) mp.getLayers().get(0);
@@ -958,6 +995,7 @@ public class GameScreen implements Screen {
      *
      * @param pos for positinos
      * @return cell object
+     * @author Neves6
      */
     public static Cell returnCell(Vector2 pos) {
         return ((TiledMapTileLayer) map1.getLayers().get(1)).getCell((int) pos.x, (int) pos.y);
@@ -969,6 +1007,8 @@ public class GameScreen implements Screen {
      *
      * @param ck - Selected cook
      * @param sr - ShapeRenderer to draw the coloured box
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void checkInteraction(Cook ck, ShapeRenderer sr) {
         float centralCookX = ck.getX() + ck.getWidth() / 2;
@@ -999,6 +1039,9 @@ public class GameScreen implements Screen {
 
     /**
      * Check if the game is over
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void checkGameOver() {
         if (Objects.equals(gameMode, "Scenario")) {
@@ -1014,6 +1057,7 @@ public class GameScreen implements Screen {
 
     /**
      * @param points - points to add to the score
+     * @author Neves6
      */
     public static void addScore(long points) {
         accumulatedScore += points;
@@ -1021,6 +1065,7 @@ public class GameScreen implements Screen {
 
     /**
      * @param points - points to subtract from the score
+     * @author Neves6
      */
     public static void subScore(long points) {
         accumulatedScore -= points;
@@ -1028,6 +1073,8 @@ public class GameScreen implements Screen {
 
     /**
      * Updates the reputation point visibility
+     *
+     * @author Neves6
      */
     public void updateRep() {
         switch (reputation) {
@@ -1050,6 +1097,8 @@ public class GameScreen implements Screen {
 
     /**
      * Adds a reputation point
+     *
+     * @author Neves6
      */
     public static void addRep() {
         switch (reputation) {
@@ -1064,6 +1113,8 @@ public class GameScreen implements Screen {
 
     /**
      * Resets game parameters
+     *
+     * @author Neves6
      */
     public void resetStatic() {
         customersServed = 0;
@@ -1083,6 +1134,7 @@ public class GameScreen implements Screen {
      *
      * @param width  - width to resize to
      * @param height - height to resize to
+     * @author Team3Gdx
      */
     @Override
     public void resize(int width, int height) {
@@ -1113,6 +1165,12 @@ public class GameScreen implements Screen {
         // TODO Auto-generated method stub
     }
 
+    /**
+     * Save game to a slot
+     *
+     * @param slotNo - slot to save to
+     * @author Neves6
+     */
     public void saveGame(int slotNo) {
         Preferences slot = Gdx.app.getPreferences("slot" + slotNo);
         slot.putLong("score", score);
@@ -1146,6 +1204,12 @@ public class GameScreen implements Screen {
         Power.savePower(slotNo);
     }
 
+    /**
+     * Load game from a slot
+     *
+     * @param slotNo - slot to load from
+     * @author Neves6
+     */
     public void loadGame(int slotNo) {
         // load back all preferences saved in saveGame
         Preferences slot = Gdx.app.getPreferences("slot" + slotNo);

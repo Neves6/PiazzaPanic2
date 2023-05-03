@@ -13,6 +13,12 @@ import com.team3gdx.game.util.Power;
 
 import java.util.Random;
 
+/**
+ * PrepStation is a station that can transform ingredients into other ingredients or recipes.
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class PrepStation extends Station {
 
     public float progress = 0;
@@ -29,6 +35,8 @@ public class PrepStation extends Station {
      * formed to another begin progress on creating it.
      *
      * @return A boolean representing whether the transformation happens.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public boolean slotsToRecipe() {
         for (Recipe recipe : Menu.RECIPES.values()) {
@@ -62,6 +70,8 @@ public class PrepStation extends Station {
 
     /**
      * generates a power randomly
+     *
+     * @author Neves6
      */
     private void generatePower(int chance) {
         int randomNumber = rand.nextInt(chance) + 1; // generate a random number between 1-chance and if its below 100 then we use the tasks
@@ -83,6 +93,8 @@ public class PrepStation extends Station {
 
     /**
      * testing purposes
+     *
+     * @author Neves6
      */
     private void testPower(int chance, int power) {
         int randomNumber = rand.nextInt(100) + 1; // generate a random number between 1-chance and if its below 100 then we use the tasks
@@ -95,6 +107,7 @@ public class PrepStation extends Station {
      * Lock currently interacting cook to station.
      *
      * @return A boolean indicating if the cook was locked.
+     * @author Team3Gdx
      */
     public boolean lockCook() {
         if (!slots.isEmpty() && slotsToRecipe()) {
@@ -122,6 +135,7 @@ public class PrepStation extends Station {
      *
      * @param batch
      * @param delta The amount to update the progress bar by.
+     * @author Team3Gdx
      */
     public void updateProgress(SpriteBatch batch, float delta) {
         if (progress < 1)
@@ -135,6 +149,7 @@ public class PrepStation extends Station {
 
     /**
      * @param batch The SpriteBatch to draw the progress bar on.
+     * @author Team3Gdx
      */
     private void drawStatusBar(SpriteBatch batch) {
         shapeRenderer.setProjectionMatrix(batch.getProjectionMatrix());
@@ -152,6 +167,8 @@ public class PrepStation extends Station {
      *
      * @param toMatch The ingredient to transform.
      * @return The ingredient that is formed.
+     * @author Team3Gdx
+     * @author Neves6
      */
     private Ingredient ingredientMatch(Ingredient toMatch) {
         for (Ingredient ingredient : Menu.INGREDIENT_PREP.keySet()) {

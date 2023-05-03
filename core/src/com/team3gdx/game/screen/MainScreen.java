@@ -19,6 +19,12 @@ import com.badlogic.gdx.utils.viewport.Viewport;
 import com.team3gdx.game.MainGameClass;
 import com.team3gdx.game.entity.Customer;
 
+/**
+ * Main menu screen
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class MainScreen implements Screen {
     final MainGameClass game;
     float v = 0;
@@ -77,6 +83,9 @@ public class MainScreen implements Screen {
 
     /**
      * Enum for the different states of the menu
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
     enum STATE {
         main, audio, leaderboard, new_game
@@ -88,6 +97,8 @@ public class MainScreen implements Screen {
      * Constructor for main menu screen
      *
      * @param game - Entry point class
+     * @author Team3Gdx
+     * @author Neves6
      */
     public MainScreen(final MainGameClass game) {
         this.game = game;
@@ -123,6 +134,9 @@ public class MainScreen implements Screen {
 
     /**
      * What should be done when the screen is shown
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
     @Override
     public void show() {
@@ -378,6 +392,7 @@ public class MainScreen implements Screen {
      * Main menu render method
      *
      * @param delta - some change in time
+     * @author Team3Gdx
      */
     @Override
     public void render(float delta) {
@@ -402,6 +417,7 @@ public class MainScreen implements Screen {
      * Change screen to specified state
      *
      * @param state - state to change screen to
+     * @author Team3Gdx
      */
     public void changeScreen(STATE state) {
         if (state == STATE.new_game) {
@@ -436,6 +452,8 @@ public class MainScreen implements Screen {
 
     /**
      * Update music volume slider
+     *
+     * @author Team3Gdx
      */
     public void musicVolumeUpdate() {
         float fromTopy = Gdx.input.getY();
@@ -458,6 +476,8 @@ public class MainScreen implements Screen {
 
     /**
      * Update game volume slider
+     *
+     * @author Team3Gdx
      */
     public void gameVolumeUpdate() {
         float fromTopy = Gdx.input.getY();
@@ -483,6 +503,7 @@ public class MainScreen implements Screen {
      *
      * @param width  - new window width
      * @param height - new window height
+     * @author Team3Gdx
      */
     @Override
     public void resize(int width, int height) {

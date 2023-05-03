@@ -9,6 +9,9 @@ import java.util.Stack;
 
 /**
  * Represents a recipe (combination of ingredients and states).
+ *
+ * @author Team3Gdx
+ * @author Neves6
  */
 public class Recipe extends Ingredient {
 
@@ -54,6 +57,7 @@ public class Recipe extends Ingredient {
      * @param width                  The recipe's texture width.
      * @param height                 The recipe's texture height.
      * @param cost                   How much the menu item will cost.
+     * @author Team3Gdx
      */
     public Recipe(String initialSteps, Ingredient initialIngredient, Map<Ingredient, String> ingredientInstructions,
                   String finalSteps, String name, boolean shouldBeOrdered, Vector2 pos, float width, float height,
@@ -75,6 +79,8 @@ public class Recipe extends Ingredient {
      *
      * @param givenIngredients A Stack of ingredients to compare to recipes.
      * @return A boolean to indicate if a recipe exists with the given ingredients.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public boolean matches(Stack<Ingredient> givenIngredients) {
         ArrayList<Ingredient> toCheck = new ArrayList<Ingredient>(ingredientInstructions.keySet());
@@ -102,6 +108,7 @@ public class Recipe extends Ingredient {
      * @param checkIngredient The ingredient to check.
      * @param ingredients     The list of ingredients to search through.
      * @return A boolean to indicate if the ingredient matches one in the list.
+     * @author Team3Gdx
      */
     private boolean contains(Ingredient checkIngredient, ArrayList<Ingredient> ingredients) {
         for (Ingredient ingredient : ingredientInstructions.keySet()) {

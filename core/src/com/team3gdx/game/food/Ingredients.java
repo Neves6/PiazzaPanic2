@@ -4,6 +4,9 @@ import com.badlogic.gdx.math.Vector2;
 
 /**
  * All available ingredient.
+ *
+ * @author Team3Gdx
+ * @author Neves6
  */
 public class Ingredients {
 

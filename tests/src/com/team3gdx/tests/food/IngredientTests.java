@@ -1,13 +1,10 @@
 package com.team3gdx.tests.food;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.team3gdx.game.food.Ingredient;
 import com.team3gdx.game.util.Power;
-import com.team3gdx.game.util.PowerUnit;
-import org.junit.Test;
 import com.team3gdx.tests.GdxTestRunner;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
@@ -15,7 +12,7 @@ import static org.junit.Assert.*;
 @RunWith(GdxTestRunner.class)
 public class IngredientTests {
     @Test
-    public void flip(){
+    public void flip() {
         SpriteBatch batch = null;
         Ingredient burger = new Ingredient(null, 32, 32, "patty", 0, .5f);
         assertFalse(burger.flip());
@@ -28,7 +25,7 @@ public class IngredientTests {
     }
 
     @Test
-    public void slice(){
+    public void slice() {
         SpriteBatch batch = null;
         Ingredient lettuce = new Ingredient(null, 32, 32, "lettuce", 1, 0);
         Ingredient burger = new Ingredient(null, 32, 32, "patty", 0, .5f);
@@ -42,7 +39,7 @@ public class IngredientTests {
     }
 
     @Test
-    public void PowerChecker(){
+    public void PowerChecker() {
         Ingredient lettuce = new Ingredient(null, 32, 32, "lettuce", 1, 0);
 
         assertFalse(lettuce.PowerChecker());
@@ -54,17 +51,14 @@ public class IngredientTests {
     }
 
     @Test
-    public void cook(){
+    public void cook() {
         SpriteBatch batch = null;
         Ingredient lettuce = new Ingredient(null, 32, 32, "lettuce", 1, 0);
-        boolean val = false;
+        boolean val = lettuce.cook(0.05f, batch) == 0.05f;
 
-        if(lettuce.cook(0.05f, batch) == 0.05f){
-            val = true;
-        }
         assertTrue(val = true);
 
-        if(lettuce.cook(0.05f, batch) != 0.05f){
+        if (lettuce.cook(0.05f, batch) != 0.05f) {
             val = false;
         }
         assertFalse(val = false);
@@ -74,12 +68,12 @@ public class IngredientTests {
     }
 
     @Test
-    public void equals(){
+    public void equals() {
         Ingredient lettuce = new Ingredient(null, 32, 32, "lettuce", 1, 0);
         Ingredient burger = new Ingredient(null, 32, 32, "patty", 0, .5f);
 
-        assertTrue(lettuce.equals(lettuce));
-        assertFalse(lettuce.equals(burger));
+        assertEquals(lettuce, lettuce);
+        assertNotEquals(lettuce, burger);
 
         lettuce = null;
         burger = null;

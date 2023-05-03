@@ -3,11 +3,12 @@ package com.team3gdx.tests.entity;
 import com.badlogic.gdx.math.Vector2;
 import com.team3gdx.game.entity.Cook;
 import com.team3gdx.game.util.CollisionTile;
-import org.junit.Test;
 import com.team3gdx.tests.GdxTestRunner;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(GdxTestRunner.class)
 public class CookTests {
@@ -36,7 +37,7 @@ public class CookTests {
 
         boolean result = cook.checkCollision(cook.getX(), cook.getY(), cltiles);
 
-        assertEquals(false, result);
+        assertFalse(result);
 
         cook = null;
     }
@@ -45,14 +46,11 @@ public class CookTests {
     public void getX() {
         Cook cook = new Cook(new Vector2(64 * 5, 64 * 5), 1);
 
-        boolean val = false;
+        boolean val = cook.getX() == 64 * 5;
 
-        if(cook.getX() == 64 * 5){
-            val = true;
-        }
         assertTrue(val = true);
 
-        if(cook.getX() != 64 * 5){
+        if (cook.getX() != 64 * 5) {
             val = false;
         }
         assertFalse(val = false);
@@ -64,14 +62,11 @@ public class CookTests {
     public void getY() {
         Cook cook = new Cook(new Vector2(64 * 5, 64 * 5), 1);
 
-        boolean val = false;
+        boolean val = cook.getY() == 64 * 5;
 
-        if(cook.getY() == 64 * 5){
-            val = true;
-        }
         assertTrue(val = true);
 
-        if(cook.getY() != 64 * 5){
+        if (cook.getY() != 64 * 5) {
             val = false;
         }
         assertFalse(val = false);
@@ -83,14 +78,11 @@ public class CookTests {
     public void getWidth() {
         Cook cook = new Cook(new Vector2(64 * 5, 64 * 5), 1);
 
-        boolean val = false;
+        boolean val = cook.getWidth() == 64;
 
-        if(cook.getWidth() == 64){
-            val = true;
-        }
         assertTrue(val = true);
 
-        if(cook.getWidth() != 64){
+        if (cook.getWidth() != 64) {
             val = false;
         }
         assertFalse(val = false);
@@ -102,14 +94,11 @@ public class CookTests {
     public void getHeight() {
         Cook cook = new Cook(new Vector2(64 * 5, 64 * 5), 1);
 
-        boolean val = false;
+        boolean val = cook.getHeight() == 128;
 
-        if(cook.getHeight() == 128){
-            val = true;
-        }
         assertTrue(val = true);
 
-        if(cook.getHeight() != 128){
+        if (cook.getHeight() != 128) {
             val = false;
         }
         assertFalse(val = false);
@@ -121,14 +110,11 @@ public class CookTests {
     public void getDirection() {
         Cook cook = new Cook(new Vector2(64 * 5, 64 * 5), 1);
 
-        boolean val = false;
+        boolean val = cook.getDirection() == new Vector2(64 * 5, 64 * 5);
 
-        if(cook.getDirection() == new Vector2(64 * 5, 64 * 5)){
-            val = true;
-        }
         assertTrue(val = true);
 
-        if(cook.getDirection() != new Vector2(64 * 5, 64 * 5)){
+        if (cook.getDirection() != new Vector2(64 * 5, 64 * 5)) {
             val = false;
         }
         assertFalse(val = false);

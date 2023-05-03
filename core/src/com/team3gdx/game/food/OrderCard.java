@@ -5,6 +5,11 @@ import com.badlogic.gdx.graphics.Texture;
 
 import java.util.HashMap;
 
+/**
+ * Represents an order card.
+ *
+ * @author Neves6
+ */
 public class OrderCard {
 
     public String name;
@@ -27,6 +32,7 @@ public class OrderCard {
      * OrderCard constructor
      *
      * @param name - name of the dish represented in the order card
+     * @author Neves6
      */
     public OrderCard(String name) {
         this.name = name;
@@ -42,6 +48,7 @@ public class OrderCard {
 
     /**
      * @return name of the order card
+     * @author Neves6
      */
     public String getName() {
         return this.name;
@@ -49,6 +56,7 @@ public class OrderCard {
 
     /**
      * @return texture for the order card
+     * @author Neves6
      */
     public Texture getTexture() {
         return this.texture;
@@ -56,6 +64,7 @@ public class OrderCard {
 
     /**
      * @return x position of the order card
+     * @author Neves6
      */
     public float getX() {
         return this.orderCardPosX;
@@ -63,6 +72,7 @@ public class OrderCard {
 
     /**
      * @return y position of the order card
+     * @author Neves6
      */
     public float getY() {
         return this.orderCardPosY;
@@ -70,6 +80,7 @@ public class OrderCard {
 
     /**
      * @return height of the order card
+     * @author Neves6
      */
     public float getHeight() {
         return this.orderCardHeight;
@@ -77,6 +88,7 @@ public class OrderCard {
 
     /**
      * @return width of the order card
+     * @author Neves6
      */
     public float getWidth() {
         return this.orderCardWidth;
@@ -84,6 +96,7 @@ public class OrderCard {
 
     /**
      * @return true if the order card has expired, false otherwise
+     * @author Neves6
      */
     public Boolean hasExpired() {
         return System.currentTimeMillis() - creationTime >= maxWaitTime;
