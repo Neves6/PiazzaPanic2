@@ -45,7 +45,8 @@ public class PrepStation extends Station {
                     progress = 0;
                     slots.clear();
                     generatePower(150);
-                    slots.add(recipe);
+                    Ingredient ingredient = new Ingredient(recipe);
+                    slots.add(ingredient);
                 }
                 return true;
             }
@@ -76,13 +77,13 @@ public class PrepStation extends Station {
     private void generatePower(int chance) {
         int randomNumber = rand.nextInt(chance) + 1; // generate a random number between 1-chance and if its below 100 then we use the tasks
         if (randomNumber <= 10) { //10% chance of clearing order
-            System.out.println("Generated random number " + randomNumber);
+            //System.out.println("Generated random number " + randomNumber);
             Power.addPower(3, batch); // add 3 to PowerStack
         } else if (randomNumber <= 40) { //30% of speed
-            System.out.println("Generated random number " + randomNumber);
+            //System.out.println("Generated random number " + randomNumber);
             Power.addPower(2, batch); // add 2 to PowerStack
         } else if (randomNumber <= 70) { //30% of instant cooking
-            System.out.println("Generated random number " + randomNumber);
+            //System.out.println("Generated random number " + randomNumber);
             Power.addPower(1, batch); // add 1 to PowerStack
         } else if (randomNumber <= 90) { //20% chance of extra points
             Power.addPower(4, batch);

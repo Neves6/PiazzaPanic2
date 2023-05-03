@@ -273,7 +273,7 @@ public class GameScreen implements Screen {
         audioEdit = new Texture(Gdx.files.internal("uielements/background.png"));
         oneRep = new Texture(Gdx.files.internal("uielements/OneRep.png"));
         twoRep = new Texture(Gdx.files.internal("uielements/TwoRep.png"));
-        fullRep = new Texture(Gdx.files.internal("uielements/fullRep.png"));
+        fullRep = new Texture(Gdx.files.internal("uielements/FullRep.png"));
         RECIPEMENU = new Texture(Gdx.files.internal("uielements/recipeMenu.png"));
         RECIPEMENUICON = new Texture(Gdx.files.internal("uielements/recipeMenuIcon.png"));
         GAMEOVER = new Texture(Gdx.files.internal("uielements/GameOver.png"));
