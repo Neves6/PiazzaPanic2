@@ -6,6 +6,9 @@ import java.util.Map;
 /**
  * All recipes. See {@link Ingredients} if your recipe requires a new ingredient
  * or an existing with different state.
+ *
+ * @author Team3Gdx
+ * @author Neves6
  */
 public class Menu {
 

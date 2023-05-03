@@ -15,6 +15,9 @@ import com.team3gdx.game.util.Power;
 
 /**
  * Represents an ingredient.
+ *
+ * @author Team3Gdx
+ * @author Neves6
  */
 public class Ingredient extends Entity {
 
@@ -52,6 +55,8 @@ public class Ingredient extends Entity {
     /**
      * Sets the appropriate properties.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param pos             The (x, y) coordinates of the ingredient.
      * @param width           The ingredient's texture width.
      * @param height          The ingredient's texture height.
@@ -84,6 +89,8 @@ public class Ingredient extends Entity {
     /**
      * Creates a new instance with identical properties.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param ingredient The ingredient to clone.
      */
     public Ingredient(Ingredient ingredient) {
@@ -104,6 +111,7 @@ public class Ingredient extends Entity {
     /**
      * Changes the {@link this#flipped} to true if possible.
      *
+     * @author Team3Gdx
      * @return A boolean representing if the ingredient was successfully flipped.
      */
     public boolean flip() {
@@ -115,6 +123,8 @@ public class Ingredient extends Entity {
     /**
      * Begin process of slicing ingredient and show status.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param batch {@link SpriteBatch} to render texture and status.
      * @param dT    The amount of time to increment by when slicing.
      * @return A boolean representing if current slicing action is complete.
@@ -150,6 +160,8 @@ public class Ingredient extends Entity {
      * Method is used by station manager to check if power is activated.
      * sets use flag to true if there is Instant power activated.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @return boolean True if power is activated the use flag is set to true. False otherwise
      */
 
@@ -170,6 +182,8 @@ public class Ingredient extends Entity {
     /**
      * Begin process of cooking ingredient and show status.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param dT    The amount of time to increment {@link this#cookedTime} by.
      * @param batch {@link SpriteBatch} to render texture and status.
      * @return A double representing the current {@link this#cookedTime} and 1 if succesfully cooked
@@ -218,6 +232,7 @@ public class Ingredient extends Entity {
     /**
      * Draw a status bar.
      *
+     * @author Team3Gdx
      * @param percentage   The current progress of the status bar.
      * @param optimumLower The bottom of the optimal status to reach bar (shown by a black bar).
      * @param optimumUpper The top of the optimal status to reach bar (shown by a black bar).
@@ -245,6 +260,8 @@ public class Ingredient extends Entity {
     }
 
     /**
+     * @author Team3Gdx
+     * @author Neves6
      * @param o {@link Object} to compare to.
      * @return A boolean representing if the two objects are equal.
      */
@@ -262,6 +279,9 @@ public class Ingredient extends Entity {
 
 /**
  * Enum representing the status of an ingredient.
+ *
+ * @author Team3Gdx
+ * @author Neves6
  */
 enum Status {
     RAW, COOKED, BURNED, MIXED

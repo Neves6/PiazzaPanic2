@@ -5,6 +5,11 @@ import com.badlogic.gdx.graphics.Texture;
 
 import java.util.HashMap;
 
+/**
+ * Represents an order card.
+ *
+ * @author Neves6
+ */
 public class OrderCard {
 
     public String name;
@@ -26,6 +31,7 @@ public class OrderCard {
     /**
      * OrderCard constructor
      *
+     * @author Neves6
      * @param name - name of the dish represented in the order card
      */
     public OrderCard(String name) {
@@ -41,6 +47,7 @@ public class OrderCard {
     }
 
     /**
+     * @author Neves6
      * @return name of the order card
      */
     public String getName() {
@@ -48,6 +55,7 @@ public class OrderCard {
     }
 
     /**
+     * @author Neves6
      * @return texture for the order card
      */
     public Texture getTexture() {
@@ -55,6 +63,7 @@ public class OrderCard {
     }
 
     /**
+     * @author Neves6
      * @return x position of the order card
      */
     public float getX() {
@@ -62,6 +71,7 @@ public class OrderCard {
     }
 
     /**
+     * @author Neves6
      * @return y position of the order card
      */
     public float getY() {
@@ -69,6 +79,7 @@ public class OrderCard {
     }
 
     /**
+     * @author Neves6
      * @return height of the order card
      */
     public float getHeight() {
@@ -76,6 +87,7 @@ public class OrderCard {
     }
 
     /**
+     * @author Neves6
      * @return width of the order card
      */
     public float getWidth() {
@@ -83,6 +95,7 @@ public class OrderCard {
     }
 
     /**
+     * @author Neves6
      * @return true if the order card has expired, false otherwise
      */
     public Boolean hasExpired() {
