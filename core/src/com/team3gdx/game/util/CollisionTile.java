@@ -14,12 +14,11 @@ public class CollisionTile {
     int tilewidth;
 
     /**
-     *
-     * @author Team3Gdx
      * @param x   X position of the tile
      * @param y   Y position of the tile
      * @param wid Width of the tile
      * @param hi  Height of the tile
+     * @author Team3Gdx
      */
     public CollisionTile(int x, int y, int wid, int hi) {
         tilex = x;

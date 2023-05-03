@@ -26,7 +26,6 @@ public class Entity {
 
     /**
      * @param batch SpriteBatch on which to draw the entity
-     *
      * @author Team3Gdx
      */
     public void draw(SpriteBatch batch) {

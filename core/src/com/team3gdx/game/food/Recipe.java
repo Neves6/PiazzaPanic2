@@ -45,8 +45,6 @@ public class Recipe extends Ingredient {
     /**
      * Sets the appropriate recipe properties.
      *
-     * @author Team3Gdx
-     *
      * @param initialSteps           Preface to the recipe.
      * @param initialIngredient      Ingredient to display with the initial step.
      * @param ingredientInstructions Map of ingredient and instruction on what to do
@@ -59,6 +57,7 @@ public class Recipe extends Ingredient {
      * @param width                  The recipe's texture width.
      * @param height                 The recipe's texture height.
      * @param cost                   How much the menu item will cost.
+     * @author Team3Gdx
      */
     public Recipe(String initialSteps, Ingredient initialIngredient, Map<Ingredient, String> ingredientInstructions,
                   String finalSteps, String name, boolean shouldBeOrdered, Vector2 pos, float width, float height,
@@ -78,10 +77,10 @@ public class Recipe extends Ingredient {
     /**
      * Check if there is a recipe with the given ingredients so that it can be assembled.
      *
-     * @author Team3Gdx
-     * @author Neves6
      * @param givenIngredients A Stack of ingredients to compare to recipes.
      * @return A boolean to indicate if a recipe exists with the given ingredients.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public boolean matches(Stack<Ingredient> givenIngredients) {
         ArrayList<Ingredient> toCheck = new ArrayList<Ingredient>(ingredientInstructions.keySet());
@@ -106,10 +105,10 @@ public class Recipe extends Ingredient {
      * Check whether the list contains a match with the given ingredient (since we
      * use {@link Ingredient#equals(Object)}).
      *
-     * @author Team3Gdx
      * @param checkIngredient The ingredient to check.
      * @param ingredients     The list of ingredients to search through.
      * @return A boolean to indicate if the ingredient matches one in the list.
+     * @author Team3Gdx
      */
     private boolean contains(Ingredient checkIngredient, ArrayList<Ingredient> ingredients) {
         for (Ingredient ingredient : ingredientInstructions.keySet()) {

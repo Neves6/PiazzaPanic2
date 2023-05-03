@@ -31,8 +31,8 @@ public class OrderCard {
     /**
      * OrderCard constructor
      *
-     * @author Neves6
      * @param name - name of the dish represented in the order card
+     * @author Neves6
      */
     public OrderCard(String name) {
         this.name = name;
@@ -47,56 +47,56 @@ public class OrderCard {
     }
 
     /**
-     * @author Neves6
      * @return name of the order card
+     * @author Neves6
      */
     public String getName() {
         return this.name;
     }
 
     /**
-     * @author Neves6
      * @return texture for the order card
+     * @author Neves6
      */
     public Texture getTexture() {
         return this.texture;
     }
 
     /**
-     * @author Neves6
      * @return x position of the order card
+     * @author Neves6
      */
     public float getX() {
         return this.orderCardPosX;
     }
 
     /**
-     * @author Neves6
      * @return y position of the order card
+     * @author Neves6
      */
     public float getY() {
         return this.orderCardPosY;
     }
 
     /**
-     * @author Neves6
      * @return height of the order card
+     * @author Neves6
      */
     public float getHeight() {
         return this.orderCardHeight;
     }
 
     /**
-     * @author Neves6
      * @return width of the order card
+     * @author Neves6
      */
     public float getWidth() {
         return this.orderCardWidth;
     }
 
     /**
-     * @author Neves6
      * @return true if the order card has expired, false otherwise
+     * @author Neves6
      */
     public Boolean hasExpired() {
         return System.currentTimeMillis() - creationTime >= maxWaitTime;

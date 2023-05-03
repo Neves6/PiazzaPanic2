@@ -13,6 +13,7 @@ import com.team3gdx.game.screen.GameScreen;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
+
 /**
  * Represents a customer controller.
  *
@@ -41,9 +42,9 @@ public class CustomerController {
      * Check whether the customer zone is correct in the tile map, and construct
      * data structures for it
      *
+     * @param gameMap - The game tilemap
      * @author Team3Gdx
      * @author Neves6
-     * @param gameMap - The game tilemap
      */
     private void computeCustomerZone(TiledMap gameMap) {
         TiledMapTileLayer botlayer = (TiledMapTileLayer) gameMap.getLayers().get(0);
@@ -136,8 +137,8 @@ public class CustomerController {
     /**
      * Deletes a customer from the customer list
      *
-     * @author Team3Gdx
      * @param num - index of customer to delete
+     * @author Team3Gdx
      */
     public void delCustomer(int num) {
         if (this.customers[num].locked) {
@@ -150,8 +151,8 @@ public class CustomerController {
     /**
      * Deletes a customer from the customer list
      *
-     * @author Team3Gdx
      * @param customer - customer to delete
+     * @author Team3Gdx
      */
     public void delCustomer(Customer customer) {
         for (int i = 0; i < this.customers.length; i++) {
@@ -165,8 +166,8 @@ public class CustomerController {
     /**
      * Draw top of customers
      *
-     * @author Team3Gdx
      * @param b1 - spritebatch to render with
+     * @author Team3Gdx
      */
     public void drawCustTop(Batch b1) {
         for (Customer c : this.customers) {
@@ -217,11 +218,11 @@ public class CustomerController {
     /**
      * Check if any of the customers is at one position
      *
-     * @author Team3Gdx
-     * @author Neves6
      * @param pos - vector position
      * @return null if no customers are at that position, return the customer that
      * is at that position
+     * @author Team3Gdx
+     * @author Neves6
      */
     public Customer isCustomerAtPos(Vector2 pos) {
         for (Customer customer : customers)
@@ -245,8 +246,8 @@ public class CustomerController {
     /**
      * Save the customer controller
      *
-     * @author Neves6
      * @param slotNo - slot to save to
+     * @author Neves6
      */
     public void saveCC(int slotNo) {
         Preferences slot = Gdx.app.getPreferences("cc" + slotNo);
@@ -283,8 +284,8 @@ public class CustomerController {
     /**
      * Load the customer controller
      *
-     * @author Neves6
      * @param slotNo - slot to load from
+     * @author Neves6
      */
     public void loadCC(int slotNo) {
         Preferences slot = Gdx.app.getPreferences("cc" + slotNo);

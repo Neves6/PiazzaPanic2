@@ -22,6 +22,7 @@ import java.util.Map;
  * extend from {@link Station}, check tile in
  * {@link this#checkInteractedTile(String, Vector2)}, and update station's
  * ingredients in {@link this#handleStations(SpriteBatch)} if necessary.
+ *
  * @author Team3Gdx
  * @author Neves6
  */
@@ -51,9 +52,9 @@ public class StationManager {
     /**
      * Checks every station for ingredients and updates them accordingly.
      *
+     * @param batch - SpriteBatch to render ingredient textures.
      * @author Team3Gdx
      * @author Neves6
-     * @param batch - SpriteBatch to render ingredient textures.
      */
     public void handleStations(SpriteBatch batch) {
         this.batch = batch;
@@ -104,10 +105,10 @@ public class StationManager {
     /**
      * Check the currently looked at tile for a station.
      *
-     * @author Team3Gdx
-     * @author Neves6
      * @param type The station type.
      * @param pos  The position of the tile.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void checkInteractedTile(String type, Vector2 pos) {
         switch (type) {
@@ -243,8 +244,8 @@ public class StationManager {
     /**
      * Method for changing locked stations to unlocked stations
      *
-     * @author Neves6
      * @param pos Vector2 type position of locked station
+     * @author Neves6
      */
     public void unlockStation(Vector2 pos, String name) {
         if (GameScreen.score + GameScreen.accumulatedScore >= 10) {
@@ -261,10 +262,10 @@ public class StationManager {
     /**
      * Check if the given station exists at the given position.
      *
-     * @author Team3Gdx
      * @param pos     Position to look for.
      * @param station The station to check for.
      * @return A boolean indicating if the station exists at that position.
+     * @author Team3Gdx
      */
     private boolean checkStationExists(Vector2 pos, Station station) {
         if (!stations.containsKey(pos)) {
@@ -278,8 +279,8 @@ public class StationManager {
     /**
      * Place ingredient on top of cook's stack on station at given position.
      *
-     * @author Team3Gdx
      * @param pos The position to lookup the station.
+     * @author Team3Gdx
      */
     private void placeIngredientStation(Vector2 pos) {
         checkStationExists(pos, new Station(pos, 4, false, null, null));
@@ -302,9 +303,9 @@ public class StationManager {
     /**
      * Take an item from the ingredient station
      *
-     * @author Team3Gdx
      * @param pos        The position of the station.
      * @param ingredient The ingredient that the station holds.
+     * @author Team3Gdx
      */
     private void takeIngredientStation(Vector2 pos, Ingredient ingredient) {
         checkStationExists(pos, new IngredientStation(pos, ingredient));

@@ -9,6 +9,7 @@ import java.util.HashMap;
 
 /**
  * Controls audio for the game
+ *
  * @author Team3Gdx
  * @author Neves6
  */
@@ -33,8 +34,8 @@ public class AudioController {
     /**
      * Adds audio file to library as music
      *
-     * @author Team3Gdx
      * @param fileName : String - Name of file to be added (include file extension)
+     * @author Team3Gdx
      */
     public void addMusic(String fileName) {
         FileHandle toAdd = Gdx.files.local("music/" + fileName);
@@ -46,8 +47,8 @@ public class AudioController {
     /**
      * Adds audio file to library as sound effect
      *
-     * @author Team3Gdx
      * @param fileName : String - Name of file to be added (include file extension)
+     * @author Team3Gdx
      */
     public void addSoundFX(String fileName) {
         FileHandle toAdd = Gdx.files.local("soundFX/" + fileName);
@@ -59,10 +60,10 @@ public class AudioController {
     /**
      * Returns instance of music object
      *
-     * @author Team3Gdx
      * @param musicName : String - Name of music to be returned (file name without
      *                  extension)
      * @return Instance of music object : Music
+     * @author Team3Gdx
      */
     public Music getMusic(String musicName) {
         return this.musics.get(musicName);
@@ -71,10 +72,10 @@ public class AudioController {
     /**
      * Returns instance of sound object
      *
-     * @author Team3Gdx
      * @param soundName : String - Name of music to be returned (file name without
      *                  extension)
      * @return Instance of sound object : Sound
+     * @author Team3Gdx
      */
     public Sound getSoundFX(String soundName) {
         return this.soundFX.get(soundName);
@@ -84,9 +85,9 @@ public class AudioController {
      * Access Sound.dispose() or Music.dispose() for individual piece of audio and
      * remove it from map
      *
-     * @author Team3Gdx
      * @param audioName : String - Name of audio instance to be disposed (file name
      *                  without extension)
+     * @author Team3Gdx
      */
     public void dispose(String audioName) {
         if (soundFX.containsKey(audioName)) {
@@ -100,6 +101,7 @@ public class AudioController {
 
     /**
      * Disposes every audio instance in map
+     *
      * @author Team3Gdx
      */
     public void disposeAll() {
@@ -116,10 +118,10 @@ public class AudioController {
     /**
      * Returns weather the given piece of audio is an instance of music or sound
      *
-     * @author Team3Gdx
      * @param audioName : String - Name of audio to be checked file (file name
      *                  without extension)
      * @return "music" if object is music or "soundFX" if object is sound : String
+     * @author Team3Gdx
      */
     public String type(String audioName) {
         if (musics.containsKey(audioName)) {
@@ -134,10 +136,10 @@ public class AudioController {
     /**
      * Returns position of play back in seconds for given music
      *
-     * @author Team3Gdx
      * @param musicName : String - Name of piece of music (file name without
      *                  extension)
      * @return Position of play back in seconds : float
+     * @author Team3Gdx
      */
     public float getPosition(String musicName) {
         return musics.get(musicName).getPosition();
@@ -146,10 +148,10 @@ public class AudioController {
     /**
      * Returns the volume of a given piece of music
      *
-     * @author Team3Gdx
      * @param musicName : String - Name of a piece of music (file name without
      *                  extension)
      * @return Volume of music with 1.0 equating to 100% : float
+     * @author Team3Gdx
      */
     public float getVolume(String musicName) {
         return musics.get(musicName).getVolume();
@@ -158,10 +160,10 @@ public class AudioController {
     /**
      * Returns weather a piece of music is looping
      *
-     * @author Team3Gdx
      * @param musicName : String - Name of a piece of music (file name without
      *                  extension)
      * @return Boolean
+     * @author Team3Gdx
      */
     public boolean isLooping(String musicName) {
         return musics.get(musicName).isLooping();
@@ -170,10 +172,10 @@ public class AudioController {
     /**
      * Returns weather a piece of music is playing
      *
-     * @author Team3Gdx
      * @param musicName : String - Name of a piece of music (file name without
      *                  extension)
      * @return Boolean
+     * @author Team3Gdx
      */
     public boolean isPlaying(String musicName) {
         return musics.get(musicName).isPlaying();
@@ -182,10 +184,10 @@ public class AudioController {
     /**
      * Sets the position of play back in seconds for a given piece of music
      *
-     * @author Team3Gdx
      * @param musicName : String - Name of a piece of music (file name without
      *                  extension)
      * @param position  : float - Play back position in seconds
+     * @author Team3Gdx
      */
     public void setPosition(String musicName, float position) {
         this.musics.get(musicName).setPosition(position);
@@ -194,10 +196,10 @@ public class AudioController {
     /**
      * Sets the volume of a given piece of music
      *
-     * @author Team3Gdx
      * @param musicName : String - Name of a piece of music (file name without
      *                  extension)
      * @param volume    : float - Volume for music (with 1.0 corresponding to 100%)
+     * @author Team3Gdx
      */
     public void setVolume(String musicName, float volume) {
         this.musics.get(musicName).setVolume(volume);
@@ -206,12 +208,12 @@ public class AudioController {
     /**
      * Sets the volume of a given sound effect
      *
-     * @author Team3Gdx
      * @param soundName : String - Name of a sound effect (file name without
      *                  extension)
      * @param soundID   : long - ID of a sound instance (Returned when sound was
      *                  played)
      * @param volume    : float - Volume for music (with 1.0 corresponding to 100%)
+     * @author Team3Gdx
      */
     public void setVolume(String soundName, long soundID, float volume) {
         this.soundFX.get(soundName).setVolume(soundID, volume);
@@ -221,10 +223,10 @@ public class AudioController {
      * Plays and loops a given piece of audio. Music will start paying if it isn't
      * already
      *
-     * @author Team3Gdx
      * @param audioName : String - Name of a piece of audio (file name without
      *                  extension)
      * @return soundID of a sound effect (-1 if not a sound effect given) : long
+     * @author Team3Gdx
      */
     public long loop(String audioName) {
         if (soundFX.containsKey(audioName)) {
@@ -244,9 +246,9 @@ public class AudioController {
      * the piece (Will not stop a sound effect where the .stop() method must be
      * used)
      *
-     * @author Team3Gdx
      * @param musicName : String - Name of a piece of music (file name without
      *                  extension)
+     * @author Team3Gdx
      */
     public void stopLooping(String musicName) {
         this.musics.get(musicName).setLooping(false);
@@ -255,10 +257,10 @@ public class AudioController {
     /**
      * Plays a given piece of audio
      *
-     * @author Team3Gdx
      * @param audioName : String - Name of a piece of audio (file name without
      *                  extension)
      * @return soundID of a sound effect (-1 if not a sound effect given) : long
+     * @author Team3Gdx
      */
     public long play(String audioName) {
         if (soundFX.containsKey(audioName)) {
@@ -273,11 +275,11 @@ public class AudioController {
     /**
      * Plays a given sound effect at a specified volume
      *
-     * @author Team3Gdx
      * @param soundName : String - Name of a sound effect (file name without
      *                  extension)
      * @param volume    : float - Volume to play audio at (1.0 equating to 100%)
      * @return soundID of a sound effect (-1 if not a sound effect given) : long
+     * @author Team3Gdx
      */
     public long play(String soundName, float volume) {
         return this.soundFX.get(soundName).play(volume);
@@ -287,9 +289,9 @@ public class AudioController {
      * Pauses a piece of audio - .play() method will resume from pre-paused position
      * (all instances of a sound effect)
      *
-     * @author Team3Gdx
      * @param audioName : String - Name of a piece of audio (file name without
      *                  extension)
+     * @author Team3Gdx
      */
     public void pause(String audioName) {
         if (soundFX.containsKey(audioName)) {
@@ -303,9 +305,9 @@ public class AudioController {
     /**
      * Stops a piece of audio (all instances of a sound effect)
      *
-     * @author Team3Gdx
      * @param audioName : String - Name of a piece of audio (file name without
      *                  extension)
+     * @author Team3Gdx
      */
     public void stop(String audioName) {
         if (soundFX.containsKey(audioName)) {
@@ -319,11 +321,11 @@ public class AudioController {
     /**
      * Stops a specific instance of a sound effect given
      *
-     * @author Team3Gdx
      * @param soundName : String - Name of a sound effect (file name without
      *                  extension)
      * @param soundID   : long - ID of a sound instance (Returned when sound was
      *                  played)
+     * @author Team3Gdx
      */
     public void stop(String soundName, long soundID) {
         this.soundFX.get(soundName).stop(soundID);

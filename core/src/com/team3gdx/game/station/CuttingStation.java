@@ -28,10 +28,10 @@ public class CuttingStation extends Station {
     /**
      * Slices the ingredient in slot if cook is interacting.
      *
-     * @author Team3Gdx
-     * @author Neves6
      * @param batch
      * @param dT
+     * @author Team3Gdx
+     * @author Neves6
      */
     public boolean interact(SpriteBatch batch, float dT) {
         currentCutTime += dT;
@@ -53,8 +53,8 @@ public class CuttingStation extends Station {
     /**
      * Lock interacting cook at station.
      *
-     * @author Team3Gdx
      * @return A boolean indicating if the cook was successfully locked.
+     * @author Team3Gdx
      */
     public boolean lockCook() {
         if (!slots.isEmpty()) {

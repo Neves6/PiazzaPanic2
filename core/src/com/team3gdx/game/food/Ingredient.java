@@ -55,14 +55,14 @@ public class Ingredient extends Entity {
     /**
      * Sets the appropriate properties.
      *
-     * @author Team3Gdx
-     * @author Neves6
      * @param pos             The (x, y) coordinates of the ingredient.
      * @param width           The ingredient's texture width.
      * @param height          The ingredient's texture height.
      * @param name            The name of the ingredient and texture.
      * @param idealSlices     The ideal number of times to slice the ingredient.
      * @param idealCookedTime The ideal length of time to cook the ingredient.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public Ingredient(Vector2 pos, float width, float height, String name, int idealSlices, float idealCookedTime) {
         this.pos = pos;
@@ -89,9 +89,9 @@ public class Ingredient extends Entity {
     /**
      * Creates a new instance with identical properties.
      *
+     * @param ingredient The ingredient to clone.
      * @author Team3Gdx
      * @author Neves6
-     * @param ingredient The ingredient to clone.
      */
     public Ingredient(Ingredient ingredient) {
         this.pos = ingredient.pos;
@@ -111,8 +111,8 @@ public class Ingredient extends Entity {
     /**
      * Changes the {@link this#flipped} to true if possible.
      *
-     * @author Team3Gdx
      * @return A boolean representing if the ingredient was successfully flipped.
+     * @author Team3Gdx
      */
     public boolean flip() {
         if (cookedTime / idealCookedTime < idealCookedTime * .65f)
@@ -123,11 +123,11 @@ public class Ingredient extends Entity {
     /**
      * Begin process of slicing ingredient and show status.
      *
-     * @author Team3Gdx
-     * @author Neves6
      * @param batch {@link SpriteBatch} to render texture and status.
      * @param dT    The amount of time to increment by when slicing.
      * @return A boolean representing if current slicing action is complete.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public boolean slice(SpriteBatch batch, float dT) {
         /**
@@ -160,9 +160,9 @@ public class Ingredient extends Entity {
      * Method is used by station manager to check if power is activated.
      * sets use flag to true if there is Instant power activated.
      *
+     * @return boolean True if power is activated the use flag is set to true. False otherwise
      * @author Team3Gdx
      * @author Neves6
-     * @return boolean True if power is activated the use flag is set to true. False otherwise
      */
 
     public Boolean PowerChecker() {
@@ -182,11 +182,11 @@ public class Ingredient extends Entity {
     /**
      * Begin process of cooking ingredient and show status.
      *
-     * @author Team3Gdx
-     * @author Neves6
      * @param dT    The amount of time to increment {@link this#cookedTime} by.
      * @param batch {@link SpriteBatch} to render texture and status.
      * @return A double representing the current {@link this#cookedTime} and 1 if succesfully cooked
+     * @author Team3Gdx
+     * @author Neves6
      */
     public double cook(float dT, SpriteBatch batch) {
         /**
@@ -232,10 +232,10 @@ public class Ingredient extends Entity {
     /**
      * Draw a status bar.
      *
-     * @author Team3Gdx
      * @param percentage   The current progress of the status bar.
      * @param optimumLower The bottom of the optimal status to reach bar (shown by a black bar).
      * @param optimumUpper The top of the optimal status to reach bar (shown by a black bar).
+     * @author Team3Gdx
      */
     private void drawStatusBar(float percentage, float optimumLower, float optimumUpper) {
         shapeRenderer.begin(ShapeType.Filled);
@@ -260,10 +260,10 @@ public class Ingredient extends Entity {
     }
 
     /**
-     * @author Team3Gdx
-     * @author Neves6
      * @param o {@link Object} to compare to.
      * @return A boolean representing if the two objects are equal.
+     * @author Team3Gdx
+     * @author Neves6
      */
     @Override
     public boolean equals(Object o) {

@@ -86,10 +86,10 @@ public class Tutorial {
     /**
      * Draws the tutorial's text and white backdrop.
      *
-     * @author Team3Gdx
-     * @author Neves6
      * @param batch {@link SpriteBatch} to render the text and ingredient textures.
      * @param dT    The amount of time to increment by between each character.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public static void drawBox(SpriteBatch batch, float dT) {
         curText = stages.get(stage).text.substring(0, Math.round(nextCharTimer));
@@ -125,8 +125,8 @@ public class Tutorial {
     }
 
     /**
-     * @author Team3Gdx
      * @return The coordinates of the current stage's position.
+     * @author Team3Gdx
      */
     public static Vector2 getStagePos() {
         return stages.get(stage).pos;
@@ -167,11 +167,11 @@ public class Tutorial {
 
     /**
      * Add a delay (used between punctuation).
-     * @author Team3Gdx
      *
      * @param amount How long the delay is.
      * @param dT     How much to increment the delay by.
      * @return A boolean to indicate if the delay has finished.
+     * @author Team3Gdx
      */
     private static boolean addDelay(float amount, float dT) {
         if (delay < amount)

@@ -23,7 +23,6 @@ import java.util.Comparator;
 /**
  * Leaderboard screen class
  *
- *
  * @author Team3Gdx
  * @author Neves6
  */
@@ -41,9 +40,9 @@ public class LeaderBoard implements Screen, TextInputListener {
     /**
      * Constructor for leaderboard screen
      *
-     * @author Team3Gdx
      * @param game - Entry point class
      * @param ms   - Main screen class
+     * @author Team3Gdx
      */
     public LeaderBoard(MainGameClass game, MainScreen ms) {
         this.game = game;
@@ -57,6 +56,7 @@ public class LeaderBoard implements Screen, TextInputListener {
      * Read player data from leaderboard file
      * Delete the leaderboard txt file to clear leaderboard
      * The file starts with "s" and then adds scores
+     *
      * @author Team3Gdx
      * @author Neves6
      */
@@ -86,6 +86,7 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * Order leaderboard data
+     *
      * @author Team3Gdx
      */
     public void sortPlayerData() {
@@ -101,6 +102,7 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * What should be done when screen is shown
+     *
      * @author Team3Gdx
      */
     public void show() {
@@ -116,9 +118,9 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * Screen render method
-     * @author Team3Gdx
      *
      * @param delta - some change in time
+     * @author Team3Gdx
      */
     public void render(float delta) {
         // TODO Auto-generated method stub
@@ -170,10 +172,10 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * Add data to leaderboard
-     * @author Team3Gdx
      *
      * @param name  - name of player
      * @param score - score of player
+     * @author Team3Gdx
      */
     public void addLeaderBoardData(String name, int score) {
         String stringscore = Integer.toString(score);
@@ -195,10 +197,10 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * Change window size
-     * @author Team3Gdx
      *
      * @param width  - new window size
      * @param height - new window height
+     * @author Team3Gdx
      */
     @Override
     public void resize(int width, int height) {

@@ -3,6 +3,7 @@ package com.team3gdx.game.entity;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+
 /**
  * Customer entity class
  *
@@ -34,12 +35,12 @@ public class Customer {
     /**
      * Constructor for customer class
      *
-     * @author Team3Gdx
-     * @author Neves6
      * @param x      - x starting pixel coordinate
      * @param y      - y starting pixel coordinate
      * @param tg     - target y cell coordinate - not in pixels
      * @param custno - customer number - changes texture
+     * @author Team3Gdx
+     * @author Neves6
      */
     public Customer(int x, int y, int tg, int custno) {
         targetsquare = tg;
@@ -86,8 +87,8 @@ public class Customer {
     /**
      * Render top of customer
      *
-     * @author Team3Gdx
      * @param b - spritebatch to render with
+     * @author Team3Gdx
      */
     public void renderCustomersTop(Batch b) {
         b.draw(currentcustparts[0][0], posx, posy + 64, 64, 64);
@@ -96,8 +97,8 @@ public class Customer {
     /**
      * Render bottom of customer
      *
-     * @author Team3Gdx
      * @param b - spritebatch to render with
+     * @author Team3Gdx
      */
     public void renderCustomersBot(Batch b) {
         b.draw(currentcustparts[1][0], posx, posy, 64, 64);
@@ -106,8 +107,8 @@ public class Customer {
     /**
      * Set target square location
      *
-     * @author Team3Gdx
      * @param tg - tile y coordinate of target square
+     * @author Team3Gdx
      */
     public void setTargetsquare(int tg) {
         targetsquare = tg;

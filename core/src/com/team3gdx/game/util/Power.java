@@ -14,6 +14,7 @@ import static com.team3gdx.game.screen.GameScreen.orderCards;
 
 /**
  * Power class is used to handle the power ups and their effects
+ *
  * @author Neves6
  */
 public class Power {
@@ -25,14 +26,12 @@ public class Power {
     private static int max = 5;
 
     /**
-     *
      * @author Neves6
      */
     private Power() {
     }
 
     /**
-     *
      * @author Neves6
      */
     private static void init() {
@@ -41,8 +40,8 @@ public class Power {
     /**
      * Changes the speed of the cooks
      *
-     * @author Neves6
      * @return boolean
+     * @author Neves6
      */
 
     public static boolean Speed() {
@@ -72,9 +71,9 @@ public class Power {
     /**
      * Method to change speed depending on multiplier supplied
      *
-     * @author Neves6
      * @param Multiplier
      * @return boolean
+     * @author Neves6
      */
     private static boolean cookspeed(Float Multiplier) {
         for (Cook cook : GameScreen.cooks) {
@@ -88,8 +87,8 @@ public class Power {
      * The set a timer for using the instant generation power up. The main implementation done with the ingredient class
      * its just for setting flag and disposing of the ui and updating power stack.
      *
-     * @author Neves6
      * @return
+     * @author Neves6
      */
     public static boolean recipe_complete() {
         PowerUnit temp = powerStack.peek();
@@ -112,8 +111,8 @@ public class Power {
     /**
      * this method removes the orders on queue, it sets up the ui and gets rid of jacket potato
      *
-     * @author Neves6
      * @return
+     * @author Neves6
      */
     public static boolean wipe() {
         PowerUnit temp = powerStack.peek();
@@ -127,8 +126,8 @@ public class Power {
     /**
      * gets current power
      *
-     * @author Neves6
      * @return power
+     * @author Neves6
      */
     public static String getCurrentPower() {
         return currentPower;
@@ -137,8 +136,8 @@ public class Power {
     /**
      * getter method returns the powerunit in case its needed
      *
-     * @author Neves6
      * @return powerstack
+     * @author Neves6
      */
     public static PowerUnit getCurrentUnit() {
         return powerStack.pop();
@@ -147,8 +146,8 @@ public class Power {
     /**
      * set flags and checks for powers and uses the top of the powerstack to set current power and call the relevant methods
      *
-     * @author Neves6
      * @return boolean true if power is used , false otherwise
+     * @author Neves6
      */
     public static boolean usePower() {
         if (!isPowerEmpty()) {
@@ -182,6 +181,7 @@ public class Power {
 
     /**
      * Adds points to the score
+     *
      * @author Neves6
      */
     private static void addPoints() {
@@ -194,6 +194,7 @@ public class Power {
 
     /**
      * Adds a reputation point
+     *
      * @author Neves6
      */
     private static void addRep() {
@@ -207,9 +208,9 @@ public class Power {
     /**
      * used to add power into stack, and sets up the ui generation
      *
-     * @author Neves6
      * @param pow
      * @param batch
+     * @author Neves6
      */
     public static void addPower(Integer pow, SpriteBatch batch) {
         Float y = 820F;
@@ -235,8 +236,8 @@ public class Power {
     /**
      * getter method for whole power stack
      *
-     * @author Neves6
      * @return powerStack
+     * @author Neves6
      */
     public static Stack<PowerUnit> getPowerStack() {
         return powerStack;
@@ -245,8 +246,8 @@ public class Power {
     /**
      * checks if there is powers in stack
      *
-     * @author Neves6
      * @return
+     * @author Neves6
      */
 
     public static boolean isPowerEmpty() {
@@ -257,8 +258,8 @@ public class Power {
     /**
      * used to check if maximum amount of power is used
      *
-     * @author Neves6
      * @return boolean indicating if stack is full or not
+     * @author Neves6
      */
 
     public static boolean isPowerFull() {
@@ -279,8 +280,8 @@ public class Power {
     /**
      * saves power to a slot
      *
-     * @author Neves6
      * @param slotNo
+     * @author Neves6
      */
     public static void savePower(int slotNo) {
         Preferences slot = Gdx.app.getPreferences("power" + slotNo);
@@ -300,8 +301,8 @@ public class Power {
     /**
      * loads power from a slot
      *
-     * @author Neves6
      * @param slotNo
+     * @author Neves6
      */
     public static void loadPower(int slotNo) {
         Preferences slot = Gdx.app.getPreferences("power" + slotNo);

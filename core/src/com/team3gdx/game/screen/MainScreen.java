@@ -21,6 +21,7 @@ import com.team3gdx.game.entity.Customer;
 
 /**
  * Main menu screen
+ *
  * @author Team3Gdx
  * @author Neves6
  */
@@ -82,6 +83,7 @@ public class MainScreen implements Screen {
 
     /**
      * Enum for the different states of the menu
+     *
      * @author Team3Gdx
      * @author Neves6
      */
@@ -93,10 +95,10 @@ public class MainScreen implements Screen {
 
     /**
      * Constructor for main menu screen
-     * @author Team3Gdx
-     * @author Neves6
      *
      * @param game - Entry point class
+     * @author Team3Gdx
+     * @author Neves6
      */
     public MainScreen(final MainGameClass game) {
         this.game = game;
@@ -132,6 +134,7 @@ public class MainScreen implements Screen {
 
     /**
      * What should be done when the screen is shown
+     *
      * @author Team3Gdx
      * @author Neves6
      */
@@ -388,8 +391,8 @@ public class MainScreen implements Screen {
     /**
      * Main menu render method
      *
-     * @author Team3Gdx
      * @param delta - some change in time
+     * @author Team3Gdx
      */
     @Override
     public void render(float delta) {
@@ -413,8 +416,8 @@ public class MainScreen implements Screen {
     /**
      * Change screen to specified state
      *
-     * @author Team3Gdx
      * @param state - state to change screen to
+     * @author Team3Gdx
      */
     public void changeScreen(STATE state) {
         if (state == STATE.new_game) {
@@ -449,6 +452,7 @@ public class MainScreen implements Screen {
 
     /**
      * Update music volume slider
+     *
      * @author Team3Gdx
      */
     public void musicVolumeUpdate() {
@@ -497,9 +501,9 @@ public class MainScreen implements Screen {
     /**
      * Resize window
      *
-     * @author Team3Gdx
      * @param width  - new window width
      * @param height - new window height
+     * @author Team3Gdx
      */
     @Override
     public void resize(int width, int height) {
