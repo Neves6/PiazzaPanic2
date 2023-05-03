@@ -19,6 +19,14 @@ import java.util.Comparator;
 //INCORRECT FILE FORMATTING WILL CRASH GAME
 //MAKE SURE ALL LINES IN LEADERBOARD FILE ARE x;y OR JUST s
 //NO NEWLINE AT END OF FILE
+
+/**
+ * Leaderboard screen class
+ *
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class LeaderBoard implements Screen, TextInputListener {
     final MainGameClass game;
 
@@ -33,6 +41,7 @@ public class LeaderBoard implements Screen, TextInputListener {
     /**
      * Constructor for leaderboard screen
      *
+     * @author Team3Gdx
      * @param game - Entry point class
      * @param ms   - Main screen class
      */
@@ -48,6 +57,8 @@ public class LeaderBoard implements Screen, TextInputListener {
      * Read player data from leaderboard file
      * Delete the leaderboard txt file to clear leaderboard
      * The file starts with "s" and then adds scores
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void readPlayerData() {
         playerData = new ArrayList<>();
@@ -75,6 +86,7 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * Order leaderboard data
+     * @author Team3Gdx
      */
     public void sortPlayerData() {
         Collections.sort(playerData, new Comparator<ArrayList<String>>() {
@@ -89,6 +101,7 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * What should be done when screen is shown
+     * @author Team3Gdx
      */
     public void show() {
         ScreenUtils.clear(0, 0, 0, 0);
@@ -103,6 +116,7 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * Screen render method
+     * @author Team3Gdx
      *
      * @param delta - some change in time
      */
@@ -156,6 +170,7 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * Add data to leaderboard
+     * @author Team3Gdx
      *
      * @param name  - name of player
      * @param score - score of player
@@ -170,6 +185,8 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * Change screen back to main menu
+     *
+     * @author Team3Gdx
      */
     public void changeScreenToMain() {
         game.gameMusic.pause();
@@ -178,6 +195,7 @@ public class LeaderBoard implements Screen, TextInputListener {
 
     /**
      * Change window size
+     * @author Team3Gdx
      *
      * @param width  - new window size
      * @param height - new window height
