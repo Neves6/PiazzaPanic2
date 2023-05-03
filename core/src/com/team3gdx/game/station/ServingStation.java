@@ -16,7 +16,7 @@ import java.util.Random;
  */
 public class ServingStation extends Station {
     public String name = "ServingStation";
-    String[] possibleOrders = new String[]{"pizza" , "jacket_potato"};
+    String[] possibleOrders = new String[]{"burger","salad","pizza" , "jacket_potato"};
     /**
      * Configure allowed ingredient to be those on the menu.
      */
