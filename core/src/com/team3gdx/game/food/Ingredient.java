@@ -150,7 +150,7 @@ public class Ingredient extends Entity {
      * Method is used by station manager to check if power is activated.
      * sets use flag to true if there is Instant power activated.
      *
-     * @return boolean True if power is activated the use flag is set to true. False otherwie
+     * @return boolean True if power is activated the use flag is set to true. False otherwise
      */
 
     public Boolean PowerChecker() {
