@@ -70,10 +70,9 @@ public class Ingredients {
     }
 
     public static Ingredient raw_pizza = new Ingredient(new Vector2(0, 0), 32, 32, "pizza", 0, .5f);
-    public static Ingredient burnt_pizza = new Ingredient(new Vector2(0, 0), 32, 32, "pizza_burned", 0, .5f);
-
+    public static Ingredient burnt_pizza = new Ingredient(new Vector2(0, 0), 32, 32, "pizza", 0, .5f);
     static {
-        cooked_pizza.status = Status.BURNED;
+        burnt_pizza.status = Status.BURNED;
     }
 
     public static Ingredient flour = new Ingredient(null, 32, 32, "flour", 0, 0);

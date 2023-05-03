@@ -65,7 +65,7 @@ public class Menu {
                 "serve together", "burger_burned", false, null, 32, 32, 0));
         RECIPES.put("Salad", new Recipe("", null, SALAD_STEPS, "serve together", "salad", false, null, 32, 32, 0));
         RECIPES.put("Raw_pizza", new Recipe("", null, RAW_PIZZA_STEPS, "Dont serve", "pizza", false, null, 32, 32, 0));
-        RECIPES.put("Jacket_Potato", new Recipe("", null, JACKET_STEPS, "serve", "jacket_potato", false, null, 32, 32, 0));
+        RECIPES.put("Jacket_potato", new Recipe("", null, JACKET_STEPS, "serve", "jacket_potato", false, null, 32, 32, 0));
 
     }
 
