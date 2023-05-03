@@ -1,11 +1,11 @@
 package com.team3gdx.tests.assets;
 
 import com.badlogic.gdx.Gdx;
-import org.junit.Test;
 import com.team3gdx.tests.GdxTestRunner;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(GdxTestRunner.class)
 public class CookAssetTests {

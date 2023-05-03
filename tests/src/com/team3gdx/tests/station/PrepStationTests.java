@@ -1,19 +1,18 @@
 package com.team3gdx.tests.station;
 
-import com.team3gdx.game.food.Ingredient;
 import com.team3gdx.game.food.Ingredients;
-import com.team3gdx.game.station.CookingStation;
 import com.team3gdx.game.station.PrepStation;
-import org.junit.Test;
 import com.team3gdx.tests.GdxTestRunner;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(GdxTestRunner.class)
 public class PrepStationTests {
     @Test
-    public void slotsToRecipe(){
+    public void slotsToRecipe() {
         Ingredients i = new Ingredients();
         PrepStation prep = new PrepStation(null);
 
@@ -30,7 +29,7 @@ public class PrepStationTests {
     }
 
     @Test
-    public void lockCook(){
+    public void lockCook() {
         PrepStation cooking = new PrepStation(null);
         assertTrue(cooking.lockCook());
 

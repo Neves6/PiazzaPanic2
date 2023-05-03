@@ -11,49 +11,49 @@ import static org.junit.Assert.*;
 public class OrderCardTests {
 
     @Test
-    public void getName(){
+    public void getName() {
         OrderCard orderCard = new OrderCard("salad");
         assertEquals("salad", orderCard.getName());
         orderCard = null;
     }
 
     @Test
-    public void getTexture(){
+    public void getTexture() {
         OrderCard orderCard = new OrderCard("salad");
         assertNotNull(orderCard.getTexture());
         orderCard = null;
     }
 
     @Test
-    public void getX(){
+    public void getX() {
         OrderCard orderCard = new OrderCard("salad");
         assertEquals(50, orderCard.getX(), 0.1);
         orderCard = null;
     }
 
     @Test
-    public void getY(){
+    public void getY() {
         OrderCard orderCard = new OrderCard("salad");
         assertEquals(50, orderCard.getY(), 0.1);
         orderCard = null;
     }
 
     @Test
-    public void getHeight(){
+    public void getHeight() {
         OrderCard orderCard = new OrderCard("salad");
         assertEquals(115, orderCard.getHeight(), 0.1);
         orderCard = null;
     }
 
     @Test
-    public void getWidth(){
+    public void getWidth() {
         OrderCard orderCard = new OrderCard("salad");
         assertEquals(115, orderCard.getWidth(), 0.1);
         orderCard = null;
     }
 
     @Test
-    public void hasExpired(){
+    public void hasExpired() {
         OrderCard orderCard = new OrderCard("salad");
         assertFalse(orderCard.hasExpired());
         orderCard = null;

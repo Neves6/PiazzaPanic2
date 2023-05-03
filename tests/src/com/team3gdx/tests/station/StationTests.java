@@ -3,8 +3,8 @@ package com.team3gdx.tests.station;
 import com.team3gdx.game.food.Ingredient;
 import com.team3gdx.game.food.Ingredients;
 import com.team3gdx.game.station.Station;
-import org.junit.Test;
 import com.team3gdx.tests.GdxTestRunner;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 @RunWith(GdxTestRunner.class)
 public class StationTests {
     @Test
-    public void place(){
+    public void place() {
         Ingredients onion = new Ingredients();
         Ingredient[] ALLOWED_INGREDIENTS = {Ingredients.onion};
         Station station = new Station(null, 1, true, ALLOWED_INGREDIENTS, "audio/soundFX/chopping.mp3");
@@ -26,7 +26,7 @@ public class StationTests {
     }
 
     @Test
-    public void isAllowed(){
+    public void isAllowed() {
         Ingredients onion = new Ingredients();
         Ingredient[] ALLOWED_INGREDIENTS = {Ingredients.onion};
         Station station = new Station(null, 1, true, ALLOWED_INGREDIENTS, "audio/soundFX/chopping.mp3");
@@ -40,7 +40,7 @@ public class StationTests {
     }
 
     @Test
-    public void take(){
+    public void take() {
         Ingredients onion = new Ingredients();
         Ingredient[] ALLOWED_INGREDIENTS = {Ingredients.onion};
         Station station = new Station(null, 1, true, ALLOWED_INGREDIENTS, "audio/soundFX/chopping.mp3");
