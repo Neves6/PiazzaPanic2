@@ -572,7 +572,7 @@ jQuery.cookie = function(name, value, options) {
     <body>
         <div id="container">
             <div id="header">
-                <div class="time" xmlns="">388 ms</div>
+                <div class="time" xmlns="">348 ms</div>
                 <h1>
                     PiazzaPanic2:tests: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">47 total, </span><span class="error">16 error, </span><span class="passed">31 passed</span></strong>
                 </h1>
@@ -591,22 +591,233 @@ jQuery.cookie = function(name, value, options) {
             </div>
             <div id="content">
                 <ul id="tree">
-                    <li xmlns="" class="level top open">
+                    <li xmlns="" class="level top failed open">
                         <span><em class="time">
-                                <div class="time">12 ms</div>
-                            </em>com.team3gdx.tests.assets.CookAssetTests</span>
+                                <div class="time">102 ms</div>
+                            </em>com.team3gdx.tests.food.IngredientTests</span>
                         <ul>
-                            <li class="level test">
+                            <li class="level test failed open">
                                 <span><em class="time">
-                                        <div class="time">12 ms</div>
-                                    </em><em class="status">passed</em>AssetsExist</span>
+                                        <div class="time">75 ms</div>
+                                    </em><em class="status">error</em>equals</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:85)<br/>	at com.team3gdx.tests.food.IngredientTests.equals(IngredientTests.java:72)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">8 ms</div>
+                                    </em><em class="status">error</em>PowerChecker</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:85)<br/>	at com.team3gdx.tests.food.IngredientTests.PowerChecker(IngredientTests.java:43)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">7 ms</div>
+                                    </em><em class="status">error</em>cook</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:85)<br/>	at com.team3gdx.tests.food.IngredientTests.cook(IngredientTests.java:56)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">6 ms</div>
+                                    </em><em class="status">error</em>flip</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:85)<br/>	at com.team3gdx.tests.food.IngredientTests.flip(IngredientTests.java:17)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">6 ms</div>
+                                    </em><em class="status">error</em>slice</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:85)<br/>	at com.team3gdx.tests.food.IngredientTests.slice(IngredientTests.java:30)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level top failed open">
+                        <span><em class="time">
+                                <div class="time">10 ms</div>
+                            </em>com.team3gdx.tests.food.RecipeTests</span>
+                        <ul>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">10 ms</div>
+                                    </em><em class="status">error</em>matches</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">java.lang.ExceptionInInitializerError<br/>	at com.team3gdx.tests.food.RecipeTests.matches(RecipeTests.java:22)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/>Caused by: java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:85)<br/>	at com.team3gdx.game.food.Ingredients.<clinit>(Ingredients.java:14)<br/>	... 16 more<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level top failed open">
+                        <span><em class="time">
+                                <div class="time">19 ms</div>
+                            </em>com.team3gdx.tests.screen.GameScreenTests</span>
+                        <ul>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">19 ms</div>
+                                    </em><em class="status">error</em>loadGame</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.screen.GameScreen.<init>(GameScreen.java:552)<br/>	at com.team3gdx.tests.screen.GameScreenTests.loadGame(GameScreenTests.java:19)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level top failed open">
+                        <span><em class="time">
+                                <div class="time">0 ms</div>
+                            </em>com.team3gdx.tests.station.BakingStationTests</span>
+                        <ul>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">0 ms</div>
+                                    </em><em class="status">error</em>place</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.BakingStationTests.place(BakingStationTests.java:16)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level top failed open">
+                        <span><em class="time">
+                                <div class="time">0 ms</div>
+                            </em>com.team3gdx.tests.station.CookingStationTests</span>
+                        <ul>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">0 ms</div>
+                                    </em><em class="status">error</em>lockCook</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.CookingStationTests.lockCook(CookingStationTests.java:16)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level top failed open">
+                        <span><em class="time">
+                                <div class="time">1 ms</div>
+                            </em>com.team3gdx.tests.station.CuttingStationTests</span>
+                        <ul>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">1 ms</div>
+                                    </em><em class="status">error</em>lockCook</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.game.station.CuttingStation.<clinit>(CuttingStation.java:18)<br/>	at com.team3gdx.tests.station.CuttingStationTests.lockCook(CuttingStationTests.java:14)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level top failed open">
+                        <span><em class="time">
+                                <div class="time">0 ms</div>
+                            </em>com.team3gdx.tests.station.OvenStationTests</span>
+                        <ul>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">0 ms</div>
+                                    </em><em class="status">error</em>place</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.OvenStationTests.place(OvenStationTests.java:16)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level top failed open">
+                        <span><em class="time">
+                                <div class="time">2 ms</div>
+                            </em>com.team3gdx.tests.station.PrepStationTests</span>
+                        <ul>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">1 ms</div>
+                                    </em><em class="status">error</em>slotsToRecipe</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.PrepStationTests.slotsToRecipe(PrepStationTests.java:16)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">1 ms</div>
+                                    </em><em class="status">error</em>lockCook</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">java.lang.ExceptionInInitializerError<br/>	at com.team3gdx.tests.station.PrepStationTests.lockCook(PrepStationTests.java:33)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/>Caused by: java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.station.PrepStation.<clinit>(PrepStation.java:131)<br/>	... 16 more<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level top failed open">
+                        <span><em class="time">
+                                <div class="time">1 ms</div>
+                            </em>com.team3gdx.tests.station.StationTests</span>
+                        <ul>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">0 ms</div>
+                                    </em><em class="status">error</em>isAllowed</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.StationTests.isAllowed(StationTests.java:30)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">0 ms</div>
+                                    </em><em class="status">error</em>take</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.StationTests.take(StationTests.java:44)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level test failed open">
+                                <span><em class="time">
+                                        <div class="time">1 ms</div>
+                                    </em><em class="status">error</em>place</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.StationTests.place(StationTests.java:16)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:58)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
                     <li class="level top open">
                         <span><em class="time">
                                 <div class="time">7 ms</div>
-                            </em>com.team3gdx.tests.assets.CustAssetTests</span>
+                            </em>com.team3gdx.tests.assets.CookAssetTests</span>
                         <ul>
                             <li class="level test">
                                 <span><em class="time">
@@ -617,12 +828,24 @@ jQuery.cookie = function(name, value, options) {
                     </li>
                     <li class="level top open">
                         <span><em class="time">
-                                <div class="time">2 ms</div>
+                                <div class="time">6 ms</div>
+                            </em>com.team3gdx.tests.assets.CustAssetTests</span>
+                        <ul>
+                            <li class="level test">
+                                <span><em class="time">
+                                        <div class="time">6 ms</div>
+                                    </em><em class="status">passed</em>AssetsExist</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level top open">
+                        <span><em class="time">
+                                <div class="time">1 ms</div>
                             </em>com.team3gdx.tests.assets.GameAudioAssetTests</span>
                         <ul>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">2 ms</div>
+                                        <div class="time">1 ms</div>
                                     </em><em class="status">passed</em>BackgroundMusicExists</span>
                             </li>
                         </ul>
@@ -641,22 +864,22 @@ jQuery.cookie = function(name, value, options) {
                     </li>
                     <li class="level top open">
                         <span><em class="time">
-                                <div class="time">42 ms</div>
+                                <div class="time">14 ms</div>
                             </em>com.team3gdx.tests.entity.CookTests</span>
                         <ul>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">25 ms</div>
+                                        <div class="time">4 ms</div>
                                     </em><em class="status">passed</em>getDirection</span>
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">10 ms</div>
+                                        <div class="time">4 ms</div>
                                     </em><em class="status">passed</em>checkCollision</span>
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">2 ms</div>
+                                        <div class="time">1 ms</div>
                                     </em><em class="status">passed</em>full</span>
                             </li>
                             <li class="level test">
@@ -683,34 +906,34 @@ jQuery.cookie = function(name, value, options) {
                     </li>
                     <li class="level top open">
                         <span><em class="time">
-                                <div class="time">142 ms</div>
+                                <div class="time">122 ms</div>
                             </em>com.team3gdx.tests.entity.CustomerControllerTests</span>
                         <ul>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">73 ms</div>
+                                        <div class="time">55 ms</div>
                                     </em><em class="status">passed</em>loadCC</span>
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">31 ms</div>
+                                        <div class="time">40 ms</div>
                                     </em><em class="status">passed</em>saveCC</span>
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">38 ms</div>
+                                        <div class="time">27 ms</div>
                                     </em><em class="status">passed</em>saveReloadEquivalency</span>
                             </li>
                         </ul>
                     </li>
                     <li class="level top open">
                         <span><em class="time">
-                                <div class="time">15 ms</div>
+                                <div class="time">16 ms</div>
                             </em>com.team3gdx.tests.entity.CustomerTests</span>
                         <ul>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">4 ms</div>
+                                        <div class="time">6 ms</div>
                                     </em><em class="status">passed</em>stepTarget</span>
                             </li>
                             <li class="level test">
@@ -720,68 +943,11 @@ jQuery.cookie = function(name, value, options) {
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">9 ms</div>
+                                        <div class="time">8 ms</div>
                                     </em><em class="status">passed</em>hasExpired</span>
                                 <ul>
                                     <li class="text">
-                                        <span class="stdout">Arrival time: 15001<br/>Waiting time: 1683072883016<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level top failed open">
-                        <span><em class="time">
-                                <div class="time">68 ms</div>
-                            </em>com.team3gdx.tests.food.IngredientTests</span>
-                        <ul>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">38 ms</div>
-                                    </em><em class="status">error</em>equals</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:80)<br/>	at com.team3gdx.tests.food.IngredientTests.equals(IngredientTests.java:78)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">8 ms</div>
-                                    </em><em class="status">error</em>PowerChecker</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:80)<br/>	at com.team3gdx.tests.food.IngredientTests.PowerChecker(IngredientTests.java:46)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">7 ms</div>
-                                    </em><em class="status">error</em>cook</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:80)<br/>	at com.team3gdx.tests.food.IngredientTests.cook(IngredientTests.java:59)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">8 ms</div>
-                                    </em><em class="status">error</em>flip</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:80)<br/>	at com.team3gdx.tests.food.IngredientTests.flip(IngredientTests.java:20)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">7 ms</div>
-                                    </em><em class="status">error</em>slice</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:80)<br/>	at com.team3gdx.tests.food.IngredientTests.slice(IngredientTests.java:33)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
+                                        <span class="stdout">Arrival time: 15001<br/>Waiting time: 1683079144168<br/></span>
                                     </li>
                                 </ul>
                             </li>
@@ -789,27 +955,27 @@ jQuery.cookie = function(name, value, options) {
                     </li>
                     <li class="level top open">
                         <span><em class="time">
-                                <div class="time">58 ms</div>
+                                <div class="time">39 ms</div>
                             </em>com.team3gdx.tests.food.OrderCardTests</span>
                         <ul>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">15 ms</div>
+                                        <div class="time">14 ms</div>
                                     </em><em class="status">passed</em>getTexture</span>
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">5 ms</div>
+                                        <div class="time">4 ms</div>
                                     </em><em class="status">passed</em>getName</span>
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">6 ms</div>
+                                        <div class="time">4 ms</div>
                                     </em><em class="status">passed</em>getX</span>
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">5 ms</div>
+                                        <div class="time">4 ms</div>
                                     </em><em class="status">passed</em>getY</span>
                             </li>
                             <li class="level test">
@@ -819,179 +985,13 @@ jQuery.cookie = function(name, value, options) {
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">9 ms</div>
+                                        <div class="time">4 ms</div>
                                     </em><em class="status">passed</em>hasExpired</span>
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">13 ms</div>
+                                        <div class="time">4 ms</div>
                                     </em><em class="status">passed</em>getWidth</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level top failed open">
-                        <span><em class="time">
-                                <div class="time">18 ms</div>
-                            </em>com.team3gdx.tests.food.RecipeTests</span>
-                        <ul>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">18 ms</div>
-                                    </em><em class="status">error</em>matches</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">java.lang.ExceptionInInitializerError<br/>	at com.team3gdx.tests.food.RecipeTests.matches(RecipeTests.java:20)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/>Caused by: java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.food.Ingredient.<init>(Ingredient.java:80)<br/>	at com.team3gdx.game.food.Ingredients.<clinit>(Ingredients.java:11)<br/>	... 16 more<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level top failed open">
-                        <span><em class="time">
-                                <div class="time">13 ms</div>
-                            </em>com.team3gdx.tests.screen.GameScreenTests</span>
-                        <ul>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">13 ms</div>
-                                    </em><em class="status">error</em>loadGame</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.screen.GameScreen.<init>(GameScreen.java:538)<br/>	at com.team3gdx.tests.screen.GameScreenTests.loadGame(GameScreenTests.java:18)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level top failed open">
-                        <span><em class="time">
-                                <div class="time">1 ms</div>
-                            </em>com.team3gdx.tests.station.BakingStationTests</span>
-                        <ul>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">1 ms</div>
-                                    </em><em class="status">error</em>place</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.BakingStationTests.place(BakingStationTests.java:15)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level top failed open">
-                        <span><em class="time">
-                                <div class="time">0 ms</div>
-                            </em>com.team3gdx.tests.station.CookingStationTests</span>
-                        <ul>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">0 ms</div>
-                                    </em><em class="status">error</em>lockCook</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.CookingStationTests.lockCook(CookingStationTests.java:16)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level top failed open">
-                        <span><em class="time">
-                                <div class="time">1 ms</div>
-                            </em>com.team3gdx.tests.station.CuttingStationTests</span>
-                        <ul>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">1 ms</div>
-                                    </em><em class="status">error</em>lockCook</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.game.station.CuttingStation.<clinit>(CuttingStation.java:12)<br/>	at com.team3gdx.tests.station.CuttingStationTests.lockCook(CuttingStationTests.java:14)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level top failed open">
-                        <span><em class="time">
-                                <div class="time">0 ms</div>
-                            </em>com.team3gdx.tests.station.OvenStationTests</span>
-                        <ul>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">0 ms</div>
-                                    </em><em class="status">error</em>place</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.OvenStationTests.place(OvenStationTests.java:15)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level top failed open">
-                        <span><em class="time">
-                                <div class="time">0 ms</div>
-                            </em>com.team3gdx.tests.station.PrepStationTests</span>
-                        <ul>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">0 ms</div>
-                                    </em><em class="status">error</em>slotsToRecipe</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.PrepStationTests.slotsToRecipe(PrepStationTests.java:17)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">0 ms</div>
-                                    </em><em class="status">error</em>lockCook</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">java.lang.ExceptionInInitializerError<br/>	at com.team3gdx.tests.station.PrepStationTests.lockCook(PrepStationTests.java:34)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/>Caused by: java.lang.NullPointerException<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.loadShader(ShaderProgram.java:204)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.compileShaders(ShaderProgram.java:183)<br/>	at com.badlogic.gdx.graphics.glutils.ShaderProgram.<init>(ShaderProgram.java:166)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.createDefaultShader(ImmediateModeRenderer20.java:241)<br/>	at com.badlogic.gdx.graphics.glutils.ImmediateModeRenderer20.<init>(ImmediateModeRenderer20.java:55)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:116)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:111)<br/>	at com.badlogic.gdx.graphics.glutils.ShapeRenderer.<init>(ShapeRenderer.java:107)<br/>	at com.team3gdx.game.station.PrepStation.<clinit>(PrepStation.java:118)<br/>	... 16 more<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="level top failed open">
-                        <span><em class="time">
-                                <div class="time">1 ms</div>
-                            </em>com.team3gdx.tests.station.StationTests</span>
-                        <ul>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">1 ms</div>
-                                    </em><em class="status">error</em>isAllowed</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.StationTests.isAllowed(StationTests.java:30)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">0 ms</div>
-                                    </em><em class="status">error</em>take</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.StationTests.take(StationTests.java:44)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level test failed open">
-                                <span><em class="time">
-                                        <div class="time">0 ms</div>
-                                    </em><em class="status">error</em>place</span>
-                                <ul>
-                                    <li class="text">
-                                        <span class="stderr">Could not initialize class com.team3gdx.game.food.Ingredientsjava.lang.NoClassDefFoundError: Could not initialize class com.team3gdx.game.food.Ingredients<br/>	at com.team3gdx.tests.station.StationTests.place(StationTests.java:16)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>	at java.base/java.lang.reflect.Method.invoke(Method.java:566)<br/>	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)<br/>	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br/>	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)<br/>	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br/>	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)<br/>	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)<br/>	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)<br/>	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)<br/>	at com.team3gdx.tests.GdxTestRunner.render(GdxTestRunner.java:59)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication.mainLoop(HeadlessApplication.java:128)<br/>	at com.badlogic.gdx.backends.headless.HeadlessApplication$1.run(HeadlessApplication.java:93)<br/></span>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -1048,7 +1048,7 @@ jQuery.cookie = function(name, value, options) {
             </div>
         </div>
         <div id="footer">
-            <p>Generated by IntelliJ IDEA on 03/05/2023, 01:15</p>
+            <p>Generated by IntelliJ IDEA on 03/05/2023, 02:59</p>
         </div>
     </body>
 </html>
