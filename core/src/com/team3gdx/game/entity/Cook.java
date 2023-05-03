@@ -15,6 +15,12 @@ import com.team3gdx.game.util.Power;
 
 import java.util.Stack;
 
+/**
+ * Represents a cook.
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class Cook extends Entity {
 
     private static final int MAX_STACK_SIZE = 5;
@@ -37,6 +43,8 @@ public class Cook extends Entity {
     /**
      * Cook entity constructor
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param pos     - x y position vector in pixels
      * @param cooknum - cook number, changes texture
      */
@@ -55,6 +63,7 @@ public class Cook extends Entity {
     /**
      * Sets cooking speed
      *
+     * @author Neves6
      * @param multiplier
      */
     public void setSpeed(Float multiplier) {
@@ -64,6 +73,8 @@ public class Cook extends Entity {
     /**
      * Update cook using user input
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param control - Control input handling object
      * @param dt      - some change in time
      * @param cl      - 2d array of collision tiles for collision detection
@@ -120,6 +131,7 @@ public class Cook extends Entity {
     /**
      * Pick up an item
      *
+     * @author Team3Gdx
      * @param item - item to pick up
      */
     public void pickUpItem(Ingredient item) {
@@ -136,6 +148,8 @@ public class Cook extends Entity {
 
     /**
      * Put down the item on the top of the stack
+     *
+     * @author Team3Gdx
      */
     public void dropItem() {
         if (heldItems.size() == 1) {
@@ -154,6 +168,7 @@ public class Cook extends Entity {
     /**
      * Checks if cook's inventory is true.
      *
+     * @author Team3Gdx
      * @return boolean : whether inventory is full.
      */
     public boolean full() {
@@ -163,6 +178,7 @@ public class Cook extends Entity {
     /**
      * Draw bottom of cook
      *
+     * @author Team3Gdx
      * @param batch - spritebatch to draw with
      */
     public void draw_bot(SpriteBatch batch) {
@@ -172,6 +188,7 @@ public class Cook extends Entity {
     /**
      * Draw top of cook
      *
+     * @author Team3Gdx
      * @param batch - spritebatch to draw with
      */
     public void draw_top(SpriteBatch batch) {
@@ -181,6 +198,7 @@ public class Cook extends Entity {
     /**
      * Draw top of cook at a certain position - used for the display in the top right
      *
+     * @author Team3Gdx
      * @param batch    - spritebatch to draw with
      * @param position - position in pixels to draw at
      */
@@ -191,6 +209,7 @@ public class Cook extends Entity {
     /**
      * Set the texture to draw with
      *
+     * @author Team3Gdx
      * @param path - Filepath to texture
      */
     private void setWalkTexture(String path) {
@@ -204,6 +223,8 @@ public class Cook extends Entity {
     /**
      * Set specific walk frames
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param row - row on the sprite sheet to draw
      */
     private void setWalkFrames(int row) {
@@ -215,6 +236,7 @@ public class Cook extends Entity {
     /**
      * Check collision with collide tiles at a certain coordinate
      *
+     * @author Team3Gdx
      * @param cookx   - cook x pixel coordinate
      * @param cooky   - cook y pixel coordinate
      * @param cltiles - 2d Collision tiles array
@@ -241,6 +263,7 @@ public class Cook extends Entity {
     /**
      * Return a rectangle which is the hitbox of the cook at a certain coordinate
      *
+     * @author Team3Gdx
      * @param x - x pixel coordinate
      * @param y - y pixel coordinate
      * @return Rectangle object of the cook hitbox
@@ -252,6 +275,7 @@ public class Cook extends Entity {
     /**
      * Return cook x pixel coordinate
      *
+     * @author Team3Gdx
      * @return cook x pixel coordinate
      */
     public float getX() {
@@ -261,6 +285,7 @@ public class Cook extends Entity {
     /**
      * Return cook y pixel coordinate
      *
+     * @author Team3Gdx
      * @return cook y pixel coordinate
      */
     public float getY() {
@@ -270,6 +295,7 @@ public class Cook extends Entity {
     /**
      * Set cook x pixel coordinate
      *
+     * @author Neves6
      * @param x - cook x pixel coordinate
      */
     public void setX(float x) {
@@ -279,6 +305,7 @@ public class Cook extends Entity {
     /**
      * Set cook y pixel coordinate
      *
+     * @author Neves6
      * @param y - cook y pixel coordinate
      */
     public void setY(float y) {
@@ -288,6 +315,7 @@ public class Cook extends Entity {
     /**
      * Return cook width
      *
+     * @author Team3Gdx
      * @return cook width
      */
     public float getWidth() {
@@ -297,6 +325,7 @@ public class Cook extends Entity {
     /**
      * return cook height
      *
+     * @author Team3Gdx
      * @return cook height
      */
     public float getHeight() {
@@ -306,6 +335,7 @@ public class Cook extends Entity {
     /**
      * Return cook direction vector
      *
+     * @author Team3Gdx
      * @return cook direction vector
      */
     public Vector2 getDirection() {

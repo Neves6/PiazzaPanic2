@@ -13,7 +13,12 @@ import com.team3gdx.game.screen.GameScreen;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
-
+/**
+ * Represents a customer controller.
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class CustomerController {
     public int lockout;
     public ArrayList<ArrayList<Integer>> customerCells;
@@ -36,6 +41,8 @@ public class CustomerController {
      * Check whether the customer zone is correct in the tile map, and construct
      * data structures for it
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param gameMap - The game tilemap
      */
     private void computeCustomerZone(TiledMap gameMap) {
@@ -112,6 +119,9 @@ public class CustomerController {
 
     /**
      * Update the customer controller
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void spawnCustomer() {
         for (int i = 0; i < this.customers.length; i++) {
@@ -126,6 +136,7 @@ public class CustomerController {
     /**
      * Deletes a customer from the customer list
      *
+     * @author Team3Gdx
      * @param num - index of customer to delete
      */
     public void delCustomer(int num) {
@@ -139,6 +150,7 @@ public class CustomerController {
     /**
      * Deletes a customer from the customer list
      *
+     * @author Team3Gdx
      * @param customer - customer to delete
      */
     public void delCustomer(Customer customer) {
@@ -153,6 +165,7 @@ public class CustomerController {
     /**
      * Draw top of customers
      *
+     * @author Team3Gdx
      * @param b1 - spritebatch to render with
      */
     public void drawCustTop(Batch b1) {
@@ -180,6 +193,8 @@ public class CustomerController {
 
     /**
      * Update customers
+     *
+     * @author Team3Gdx
      */
     public void updateCustomers() {
         for (Customer c : this.customers) {
@@ -202,6 +217,8 @@ public class CustomerController {
     /**
      * Check if any of the customers is at one position
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param pos - vector position
      * @return null if no customers are at that position, return the customer that
      * is at that position
@@ -217,12 +234,20 @@ public class CustomerController {
 
     /**
      * Reinitialise the customer array
+     *
+     * @author Neves6
      */
     public void reInitCustArr() {
         customers = new Customer[GameScreen.CUSTOMER_SPAWNCAP];
         leavingcustomers = new Customer[GameScreen.CUSTOMER_SPAWNCAP];
     }
 
+    /**
+     * Save the customer controller
+     *
+     * @author Neves6
+     * @param slotNo - slot to save to
+     */
     public void saveCC(int slotNo) {
         Preferences slot = Gdx.app.getPreferences("cc" + slotNo);
         slot.putInteger("top", top);
@@ -255,6 +280,12 @@ public class CustomerController {
         slot.flush();
     }
 
+    /**
+     * Load the customer controller
+     *
+     * @author Neves6
+     * @param slotNo - slot to load from
+     */
     public void loadCC(int slotNo) {
         Preferences slot = Gdx.app.getPreferences("cc" + slotNo);
         customers = new Customer[GameScreen.CUSTOMER_SPAWNCAP];

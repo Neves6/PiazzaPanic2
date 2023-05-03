@@ -3,7 +3,12 @@ package com.team3gdx.game.entity;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-
+/**
+ * Customer entity class
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class Customer {
     int targetsquare;
     public int posx;
@@ -29,6 +34,8 @@ public class Customer {
     /**
      * Constructor for customer class
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param x      - x starting pixel coordinate
      * @param y      - y starting pixel coordinate
      * @param tg     - target y cell coordinate - not in pixels
@@ -57,6 +64,9 @@ public class Customer {
 
     /**
      * Set arrival time as when customer reaches serving station
+     *
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void arrived() {
         arrivalTime = 18000 + System.currentTimeMillis();
@@ -64,6 +74,8 @@ public class Customer {
 
     /**
      * Checks if customer has been waiting too long, returns true if so.
+     *
+     * @author Neves6
      */
     public Boolean hasExpired() {
         System.out.println("Arrival time: " + arrivalTime);
@@ -74,6 +86,7 @@ public class Customer {
     /**
      * Render top of customer
      *
+     * @author Team3Gdx
      * @param b - spritebatch to render with
      */
     public void renderCustomersTop(Batch b) {
@@ -83,6 +96,7 @@ public class Customer {
     /**
      * Render bottom of customer
      *
+     * @author Team3Gdx
      * @param b - spritebatch to render with
      */
     public void renderCustomersBot(Batch b) {
@@ -92,6 +106,7 @@ public class Customer {
     /**
      * Set target square location
      *
+     * @author Team3Gdx
      * @param tg - tile y coordinate of target square
      */
     public void setTargetsquare(int tg) {
@@ -100,6 +115,8 @@ public class Customer {
 
     /**
      * Move towards customer target tile
+     *
+     * @author Team3Gdx
      */
     public void stepTarget() {
         targetpixel = 32 + (targetsquare * 64);
