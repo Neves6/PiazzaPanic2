@@ -623,9 +623,7 @@ public class GameScreen implements Screen {
         // Check Customer Wait Times
         for (int i = 0; i < cc.customers.length; i++) {
             if (cc.customers[i] != null && cc.customers[i].locked) {
-                System.out.println("Customer " + cc.customers[i]);
                 if (cc.customers[i].hasExpired()) {
-                    System.out.println("Customer has expired " + System.currentTimeMillis() / 1000);
                     cc.delCustomer(cc.customers[i]);
                     updateRep();
                 }

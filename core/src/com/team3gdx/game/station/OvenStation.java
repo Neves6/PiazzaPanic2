@@ -10,7 +10,7 @@ import com.team3gdx.game.food.Ingredients;
  * @author Neves6
  */
 public class OvenStation extends CookingStation {
-    private final static Ingredient[] ALLOWED_INGREDIENTS = {Ingredients.cooked_pizza, Ingredients.burnt_pizza, Ingredients.raw_pizza, Ingredients.potato, Ingredients.potato_cooked, Ingredients.potato_burned};
+    private final static Ingredient[] ALLOWED_INGREDIENTS = {Ingredients.cooked_pizza,Ingredients.cooked_pizza2, Ingredients.burnt_pizza, Ingredients.raw_pizza, Ingredients.potato, Ingredients.potato_cooked, Ingredients.potato_burned};
 
     /**
      * @param pos The position of the station.
