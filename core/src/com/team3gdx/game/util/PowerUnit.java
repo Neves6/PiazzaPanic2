@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 /**
  * Stores powers and relevant textures, positions, and used by GameScreen to render power ups.
+ * @author Neves6
  */
 public class PowerUnit {
     private final Texture texture;
@@ -20,6 +21,7 @@ public class PowerUnit {
     /**
      * constructur for power unit
      *
+     * @author Neves6
      * @param power
      * @param texture
      * @param x
@@ -36,6 +38,7 @@ public class PowerUnit {
     /**
      * getter method for returning power
      *
+     * @author Neves6
      * @return
      */
 
@@ -46,6 +49,7 @@ public class PowerUnit {
     /**
      * used to render the textures in the right positions
      *
+     * @author Neves6
      * @param batch
      */
     public void render(SpriteBatch batch) {
@@ -55,6 +59,7 @@ public class PowerUnit {
     /**
      * used to set visibility of textures, if set to false then gamescreen.powerunit method will stop rendering
      *
+     * @author Neves6
      * @param visible
      */
     public void setVisible(boolean visible) {
@@ -64,6 +69,7 @@ public class PowerUnit {
     /**
      * checks for visibility by gamescreen.powerunit
      *
+     * @author Neves6
      * @return
      */
     public boolean isVisible() {
@@ -73,6 +79,7 @@ public class PowerUnit {
     /**
      * getter method for returning texture
      *
+     * @author Neves6
      * @return
      */
 
@@ -83,6 +90,7 @@ public class PowerUnit {
     /**
      * getter method for returning x position
      *
+     * @author Neves6
      * @return
      */
     public Float getX() {
@@ -92,6 +100,7 @@ public class PowerUnit {
     /**
      * getter method for returning y positions
      *
+     * @author Neves6
      * @return
      */
     public Float getY() {
@@ -99,6 +108,7 @@ public class PowerUnit {
     }
 
     /**
+     * @author Neves6
      * @return boolean if disposed succesfully
      */
     public boolean dispose() {

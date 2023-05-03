@@ -12,6 +12,10 @@ import java.util.Stack;
 
 import static com.team3gdx.game.screen.GameScreen.orderCards;
 
+/**
+ * Power class is used to handle the power ups and their effects
+ * @author Neves6
+ */
 public class Power {
     public static int use;
     //in charge of handling different states of power ups
@@ -20,15 +24,24 @@ public class Power {
     private static final Stack<PowerUnit> powerStack = new Stack<>();
     private static int max = 5;
 
+    /**
+     *
+     * @author Neves6
+     */
     private Power() {
     }
 
+    /**
+     *
+     * @author Neves6
+     */
     private static void init() {
     }
 
     /**
      * Changes the speed of the cooks
      *
+     * @author Neves6
      * @return boolean
      */
 
@@ -59,6 +72,7 @@ public class Power {
     /**
      * Method to change speed depending on multiplier supplied
      *
+     * @author Neves6
      * @param Multiplier
      * @return boolean
      */
@@ -74,6 +88,7 @@ public class Power {
      * The set a timer for using the instant generation power up. The main implementation done with the ingredient class
      * its just for setting flag and disposing of the ui and updating power stack.
      *
+     * @author Neves6
      * @return
      */
     public static boolean recipe_complete() {
@@ -97,6 +112,7 @@ public class Power {
     /**
      * this method removes the orders on queue, it sets up the ui and gets rid of jacket potato
      *
+     * @author Neves6
      * @return
      */
     public static boolean wipe() {
@@ -111,6 +127,7 @@ public class Power {
     /**
      * gets current power
      *
+     * @author Neves6
      * @return power
      */
     public static String getCurrentPower() {
@@ -120,6 +137,7 @@ public class Power {
     /**
      * getter method returns the powerunit in case its needed
      *
+     * @author Neves6
      * @return powerstack
      */
     public static PowerUnit getCurrentUnit() {
@@ -129,6 +147,7 @@ public class Power {
     /**
      * set flags and checks for powers and uses the top of the powerstack to set current power and call the relevant methods
      *
+     * @author Neves6
      * @return boolean true if power is used , false otherwise
      */
     public static boolean usePower() {
@@ -163,6 +182,7 @@ public class Power {
 
     /**
      * Adds points to the score
+     * @author Neves6
      */
     private static void addPoints() {
         PowerUnit temp = powerStack.peek();
@@ -174,6 +194,7 @@ public class Power {
 
     /**
      * Adds a reputation point
+     * @author Neves6
      */
     private static void addRep() {
         PowerUnit temp = powerStack.peek();
@@ -186,6 +207,7 @@ public class Power {
     /**
      * used to add power into stack, and sets up the ui generation
      *
+     * @author Neves6
      * @param pow
      * @param batch
      */
@@ -213,6 +235,7 @@ public class Power {
     /**
      * getter method for whole power stack
      *
+     * @author Neves6
      * @return powerStack
      */
     public static Stack<PowerUnit> getPowerStack() {
@@ -222,6 +245,7 @@ public class Power {
     /**
      * checks if there is powers in stack
      *
+     * @author Neves6
      * @return
      */
 
@@ -233,6 +257,7 @@ public class Power {
     /**
      * used to check if maximum amount of power is used
      *
+     * @author Neves6
      * @return boolean indicating if stack is full or not
      */
 
@@ -240,12 +265,23 @@ public class Power {
         return powerStack.size() == max;
     }
 
+    /**
+     * clears powers
+     *
+     * @author Neves6
+     */
     public static void resetPower() {
         powerStack.clear();
         currentPower = "None";
         use = 0;
     }
 
+    /**
+     * saves power to a slot
+     *
+     * @author Neves6
+     * @param slotNo
+     */
     public static void savePower(int slotNo) {
         Preferences slot = Gdx.app.getPreferences("power" + slotNo);
         slot.putInteger("use", use);
@@ -261,6 +297,12 @@ public class Power {
         slot.flush();
     }
 
+    /**
+     * loads power from a slot
+     *
+     * @author Neves6
+     * @param slotNo
+     */
     public static void loadPower(int slotNo) {
         Preferences slot = Gdx.app.getPreferences("power" + slotNo);
         use = slot.getInteger("use");
