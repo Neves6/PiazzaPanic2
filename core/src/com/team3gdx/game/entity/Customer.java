@@ -79,8 +79,6 @@ public class Customer {
      * @author Neves6
      */
     public Boolean hasExpired() {
-        System.out.println("Arrival time: " + arrivalTime);
-        System.out.println("Waiting time: " + (System.currentTimeMillis() - arrivalTime));
         return System.currentTimeMillis() - arrivalTime >= maxWaitTime;
     }
 

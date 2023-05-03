@@ -33,6 +33,10 @@ public class Ingredients {
     public static Ingredient tomato = new Ingredient(null, 32, 32, "tomato", 1, 0);
     public static Ingredient onion = new Ingredient(null, 32, 32, "onion", 1, 0);
 
+    public static Ingredient cooked_pizza2= new Ingredient(null , 32, 32 , "pizza2" , 0 , 0.5f);
+    static{
+        cooked_pizza2.status=Status.RAW;
+    }
     // Chopped vegetables.
     public static Ingredient lettuceChopped = new Ingredient(null, 32, 32, "lettuce", 1, 0);
 

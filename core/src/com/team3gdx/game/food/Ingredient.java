@@ -27,7 +27,7 @@ public class Ingredient extends Entity {
     public int slices;
     private final int idealSlices;
     private float cookedTime;
-    private final float idealCookedTime;
+    private float idealCookedTime;
     private final BitmapFont font;
     public Status status;
 
@@ -40,7 +40,7 @@ public class Ingredient extends Entity {
     public boolean slicing;
     public boolean flipped;
     public boolean mixing;
-    private final boolean burn = true; // determines if cooking items can be burnt, can be changed in the future when implementing easy modes
+    private boolean burn = true; // determines if cooking items can be burnt, can be changed in the future when implementing easy modes
     /**
      * Name of ingredient to get texture.
      */
@@ -199,6 +199,10 @@ public class Ingredient extends Entity {
             this.flipped = true;
             return 1;
         }
+        if(this.name.equals("pizza")){
+            this.burn=false;
+            this.idealCookedTime=0.5f;
+        }
 
 
         shapeRenderer.setProjectionMatrix(batch.getProjectionMatrix());
@@ -211,7 +215,16 @@ public class Ingredient extends Entity {
             if (GameScreen.state1 == STATE.Continue)
                 cookedTime += dT;
             drawStatusBar(cookedTime / idealCookedTime, idealCookedTime * .65f, idealCookedTime * 1.35f);
-            if (cookedTime / idealCookedTime * width > idealCookedTime * width * .65f) {
+        if (cookedTime / idealCookedTime * width > idealCookedTime * width * .65f) {
+                if(this.name.equals("pizza") || this.name.equals("pizza2")){
+                    System.out.println("SUCCESS");
+                    this.name="pizza2";
+                    texture=new Texture("items/pizza_cooked.png");
+                    this.status=Status.RAW; // confuse equals method
+                    System.out.println(this.equals(Menu.RECIPES.get("Pizza")));
+                    this.use=false;
+                    return 1;
+                }
                 texture = new Texture("items/" + name + "_cooked.png");
                 status = Status.COOKED;
                 this.use = false;
@@ -219,6 +232,7 @@ public class Ingredient extends Entity {
             }
         } else {
             if (this.burn) {
+                System.out.println("BURNT");
                 status = Status.BURNED;
                 texture = new Texture("items/" + name + "_burned.png");
             }
