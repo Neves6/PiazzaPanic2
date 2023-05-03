@@ -81,16 +81,19 @@ public class ServingStation extends Station {
                         case "jacket_potato":
                             GameScreen.addScore(100);
                             break;
+
                     }
                 } else if (!slots.isEmpty() && slots.peek().equals(Ingredients.cooked_pizza) && order.getName() == "pizza") {
                     GameScreen.addScore(300);
                 }
+                iterator.remove();
+                slots.pop();
+                GameScreen.orderJustServed = true;
+                GameScreen.customersServed += 1;
+
 
             }
-            iterator.remove();
-            slots.pop();
-            GameScreen.orderJustServed = true;
-            GameScreen.customersServed += 1;
+
 
         }
         }
