@@ -13,6 +13,11 @@ import com.team3gdx.game.util.Power;
 
 import java.util.Random;
 
+/**
+ * PrepStation is a station that can transform ingredients into other ingredients or recipes.
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class PrepStation extends Station {
 
     public float progress = 0;
@@ -28,6 +33,8 @@ public class PrepStation extends Station {
      * Check if the current ingredients are part of a recipe or an ingredient can be
      * formed to another begin progress on creating it.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @return A boolean representing whether the transformation happens.
      */
     public boolean slotsToRecipe() {
@@ -62,6 +69,7 @@ public class PrepStation extends Station {
 
     /**
      * generates a power randomly
+     * @author Neves6
      */
     private void generatePower(int chance) {
         int randomNumber = rand.nextInt(chance) + 1; // generate a random number between 1-chance and if its below 100 then we use the tasks
@@ -83,6 +91,7 @@ public class PrepStation extends Station {
 
     /**
      * testing purposes
+     * @author Neves6
      */
     private void testPower(int chance, int power) {
         int randomNumber = rand.nextInt(100) + 1; // generate a random number between 1-chance and if its below 100 then we use the tasks
@@ -93,6 +102,7 @@ public class PrepStation extends Station {
 
     /**
      * Lock currently interacting cook to station.
+     * @author Team3Gdx
      *
      * @return A boolean indicating if the cook was locked.
      */
@@ -120,6 +130,7 @@ public class PrepStation extends Station {
     /**
      * Update and display the progress bar.
      *
+     * @author Team3Gdx
      * @param batch
      * @param delta The amount to update the progress bar by.
      */
@@ -134,6 +145,7 @@ public class PrepStation extends Station {
     }
 
     /**
+     * @author Team3Gdx
      * @param batch The SpriteBatch to draw the progress bar on.
      */
     private void drawStatusBar(SpriteBatch batch) {
@@ -150,6 +162,8 @@ public class PrepStation extends Station {
     /**
      * Check whether the ingredient can be formed into another.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param toMatch The ingredient to transform.
      * @return The ingredient that is formed.
      */

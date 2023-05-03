@@ -8,6 +8,10 @@ import com.team3gdx.game.food.Ingredient;
 import com.team3gdx.game.screen.GameScreen;
 import com.team3gdx.game.screen.GameScreen.STATE;
 
+/**
+ * A cooking station for cooking ingredients.
+ * @author Team3Gdx
+ */
 public class CookingStation extends Station {
 
     ParticleEffect[] pES;
@@ -21,6 +25,7 @@ public class CookingStation extends Station {
     /**
      * Create particle effects above the station.
      *
+     * @author Team3Gdx
      * @param pos          The position of the particles.
      * @param particlePath The path to the particle effect's behaviour.
      */
@@ -41,6 +46,7 @@ public class CookingStation extends Station {
     /**
      * Render the particles.
      *
+     * @author Team3Gdx
      * @param batch
      * @param slotIndex The slot to draw the particle effects at (which slot is
      *                  active).
@@ -59,6 +65,7 @@ public class CookingStation extends Station {
     /**
      * Lock the current cook at the station.
      *
+     * @author Team3Gdx
      * @return A boolean indicating if the cook was successfully locked.
      */
     public boolean lockCook() {
@@ -82,6 +89,7 @@ public class CookingStation extends Station {
     /**
      * Check interactions with the cooking station.
      *
+     * @author Team3Gdx
      * @param batch
      */
     public void checkCookingStation(SpriteBatch batch) {

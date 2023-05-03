@@ -14,6 +14,8 @@ import java.util.Stack;
 
 /**
  * Represents a station.
+ * @author Team3Gdx
+ * @author Neves6
  */
 public class Station {
 
@@ -49,6 +51,7 @@ public class Station {
     public Cook lockedCook;
 
     /**
+     * @author Team3Gdx
      * @param pos                The (x, y) coordinates of the station.
      * @param numberOfSlots      The number of slots on the station.
      * @param infinite           Indicates if the station has an unlimited supply of
@@ -69,6 +72,7 @@ public class Station {
 
     /**
      * Places an ingredient in the station's top slot.
+     * @author Team3Gdx
      *
      * @param ingredient The ingredient to be placed.
      * @return A boolean to indicate if the ingredient was successfully placed.
@@ -86,6 +90,7 @@ public class Station {
     /**
      * Check if the ingredient can be placed on the station.
      *
+     * @author Team3Gdx
      * @param droppedIngredient The ingredient to check.
      * @return A boolean to indicate if the ingredient was allowed.
      */
@@ -103,6 +108,8 @@ public class Station {
     /**
      * Take the ingredient from the top slot.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @return The ingredient taken if successful, null otherwise.
      */
     public Ingredient take() {
@@ -118,6 +125,7 @@ public class Station {
     /**
      * Display text indicating to take the ingredient.
      *
+     * @author Team3Gdx
      * @param batch The SpriteBatch to draw the text on.
      */
     public void drawTakeText(SpriteBatch batch) {
@@ -130,6 +138,7 @@ public class Station {
     /**
      * Display text indicating to drop an item in the station's slot.
      *
+     * @author Team3Gdx
      * @param batch The SpriteBatch to draw the text on.
      */
     public void drawDropText(SpriteBatch batch) {
@@ -139,6 +148,7 @@ public class Station {
     }
 
     /**
+     * @author Team3Gdx
      * @param text Text to be drawn.
      * @param pos  Position to draw at.
      */
@@ -150,6 +160,7 @@ public class Station {
 
     /**
      * Play the station's sound.
+     * @author Team3Gdx
      */
     public void interactSound() {
         interactSound.setVolume(MainGameClass.gameVolumeScale);

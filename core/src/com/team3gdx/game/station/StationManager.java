@@ -22,6 +22,8 @@ import java.util.Map;
  * extend from {@link Station}, check tile in
  * {@link this#checkInteractedTile(String, Vector2)}, and update station's
  * ingredients in {@link this#handleStations(SpriteBatch)} if necessary.
+ * @author Team3Gdx
+ * @author Neves6
  */
 public class StationManager {
     private static final Map<String, Texture> textures = new HashMap<>();
@@ -49,6 +51,8 @@ public class StationManager {
     /**
      * Checks every station for ingredients and updates them accordingly.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param batch - SpriteBatch to render ingredient textures.
      */
     public void handleStations(SpriteBatch batch) {
@@ -100,6 +104,8 @@ public class StationManager {
     /**
      * Check the currently looked at tile for a station.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param type The station type.
      * @param pos  The position of the tile.
      */
@@ -237,6 +243,7 @@ public class StationManager {
     /**
      * Method for changing locked stations to unlocked stations
      *
+     * @author Neves6
      * @param pos Vector2 type position of locked station
      */
     public void unlockStation(Vector2 pos, String name) {
@@ -254,6 +261,7 @@ public class StationManager {
     /**
      * Check if the given station exists at the given position.
      *
+     * @author Team3Gdx
      * @param pos     Position to look for.
      * @param station The station to check for.
      * @return A boolean indicating if the station exists at that position.
@@ -270,6 +278,7 @@ public class StationManager {
     /**
      * Place ingredient on top of cook's stack on station at given position.
      *
+     * @author Team3Gdx
      * @param pos The position to lookup the station.
      */
     private void placeIngredientStation(Vector2 pos) {
@@ -293,6 +302,7 @@ public class StationManager {
     /**
      * Take an item from the ingredient station
      *
+     * @author Team3Gdx
      * @param pos        The position of the station.
      * @param ingredient The ingredient that the station holds.
      */

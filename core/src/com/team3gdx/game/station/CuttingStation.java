@@ -7,6 +7,12 @@ import com.team3gdx.game.food.Ingredients;
 import com.team3gdx.game.screen.GameScreen;
 import com.team3gdx.game.util.Power;
 
+/**
+ * A station that slices ingredients.
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class CuttingStation extends Station {
     private final Boolean temp = false;
     private final static Ingredient[] ALLOWED_INGREDIENTS = {Ingredients.lettuce, Ingredients.tomato,
@@ -22,6 +28,8 @@ public class CuttingStation extends Station {
     /**
      * Slices the ingredient in slot if cook is interacting.
      *
+     * @author Team3Gdx
+     * @author Neves6
      * @param batch
      * @param dT
      */
@@ -45,6 +53,7 @@ public class CuttingStation extends Station {
     /**
      * Lock interacting cook at station.
      *
+     * @author Team3Gdx
      * @return A boolean indicating if the cook was successfully locked.
      */
     public boolean lockCook() {

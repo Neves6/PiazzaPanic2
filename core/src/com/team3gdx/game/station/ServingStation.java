@@ -8,6 +8,11 @@ import com.team3gdx.game.screen.GameScreen;
 import java.util.Iterator;
 import java.util.Random;
 
+/**
+ * A station that serves food to customers.
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class ServingStation extends Station {
     public String name = "ServingStation";
     String[] possibleOrders = new String[]{"salad", "burger"};
@@ -25,7 +30,11 @@ public class ServingStation extends Station {
         }
     }
 
-
+    /**
+     * Create a new serving station.
+     * @author Team3Gdx
+     * @param pos The position of the station.
+     */
     public ServingStation(Vector2 pos) {
         super(pos, 1, false, allowedIngredients, "audio/soundFX/money-collect.mp3");
     }
@@ -33,6 +42,8 @@ public class ServingStation extends Station {
     /**
      * Check if there is a customer waiting, add their order to the orderCards and check if the
      * serving station contains any active orders.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void takeCustomerOrder() {
         Customer waitingCustomer = GameScreen.cc.isCustomerAtPos(new Vector2(pos.x - 1, pos.y));
@@ -44,6 +55,8 @@ public class ServingStation extends Station {
 
     /**
      * Check if the station has an order that matches the current order card and serve it.
+     * @author Team3Gdx
+     * @author Neves6
      */
     public void serveOrder() {
         if (!slots.empty()) {

@@ -4,15 +4,25 @@ import com.badlogic.gdx.math.Vector2;
 import com.team3gdx.game.food.Ingredient;
 import com.team3gdx.game.food.Ingredients;
 
+/**
+ * A station that bakes ingredients.
+ * @author Team3Gdx
+ */
 public class BakingStation extends CookingStation {
 
     private final static Ingredient[] ALLOWED_INGREDIENTS = {Ingredients.bun, Ingredients.cooked_bun};
 
+    /**
+     * Creates a new baking station.
+     * @author Team3Gdx
+     * @param pos The position of the station.
+     */
     public BakingStation(Vector2 pos) {
         super(pos, 4, ALLOWED_INGREDIENTS, "particles/smokes.party", "audio/soundFX/frying.mp3");
     }
 
     /**
+     * @author Team3Gdx
      * @param ingredient The ingredient to be placed.
      * @return True if the ingredient was placed, false otherwise.
      */
