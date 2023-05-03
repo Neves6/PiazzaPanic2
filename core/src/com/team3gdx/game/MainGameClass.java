@@ -12,6 +12,12 @@ import com.team3gdx.game.screen.LeaderBoard;
 import com.team3gdx.game.screen.MainScreen;
 import com.team3gdx.game.util.AudioController;
 
+/**
+ * Holds the game class.
+ *
+ * @author Team3Gdx
+ * @author Neves6
+ */
 public class MainGameClass extends Game {
     public SpriteBatch batch;
     public BitmapFont font;
@@ -26,6 +32,10 @@ public class MainGameClass extends Game {
     public ShapeRenderer shapeRenderer;
     public static int lateLoadSlot = -1;
 
+    /**
+     * @author Team3Gdx
+     * @author Neves6
+     */
     @Override
     public void create() {
         // Music Initialisation
